@@ -39,12 +39,18 @@
 #hero{
     min-height: 100%;
     width: 100%;
-    color: #1d2026;
+    color: #333333;
     position: relative;
+    padding-top: 80px;
+}
+
+.navbar{
+    background-color: #fff;
+    border-radius: 0;
 }
 
 .navbar a{
-    color:#212529;
+    color:#333333;
 }
 
 .nav-pad{
@@ -52,7 +58,7 @@
 }
 
 .burgermenu{
-    color:#212529;
+    color:#333333;
 }
 
 .navbar-collapse{
@@ -63,13 +69,8 @@
     box-shadow: none !important;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding: 0 20px !important;
-    transition: .3s ease;
-}
-
 .navbar-expand-lg .navbar-nav .nav-link:hover{
-    color:#20aa69;
+    color:#333333;
 }
 
 #banner-image{
@@ -89,25 +90,22 @@
 /* .text-banner{
     
 } */
-
-.text-banner h1{
+.text-banner{
     position: absolute;
     top: 40%;
     left: 10%;
     color: #fff;
-    font-size: 50px;
     font-family: 'lato-black', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
 }
 
+.text-banner h1{
+    font-size: 50px;
+}
+
 .text-banner p{
-    position: absolute;
-    top: 53%;
-    left: 10%;
-    color: #fff;
     font-size: 17px;
     font-family: 'lato-bold', sans-serif;
-    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
 }
 
 #deals{
@@ -161,7 +159,7 @@
 #top-picks .judul{
     font-family: 'poppin-bold', sans-serif;
     text-align: center;
-    color:#212529;
+    color:#333333;
     font-size: 35px;
 }
 
@@ -197,14 +195,15 @@
 
 .furni-info .furni-price{
     font-family: 'lato-bold', sans-serif;
-    color:#212529;
+    color:#333333;
 }
 
 #new-arrival{
     width: 93%;
     height: 60vh;
     margin: auto;
-    background: #fcf6f2;
+    color: #fff;
+    background: #c5c6c8;
 }
 
 #new-arrival .image{
@@ -226,7 +225,8 @@
     font-family: 'lato-bold', sans-serif;
 }
 
-#new-arrival .arrival-text .text-top{
+#new-arrival .arrival-text .text-top,
+#new-arrival .arrival-text .text-price{
     font-size: 20px;
 }
 
@@ -234,11 +234,58 @@
     font-size: 50px;
 }
 
+
+#services{
+    width: 93%;
+    height: auto;
+    margin: auto;
+    margin-top: 90px;
+}
+
+#services h1{
+    font-family: "lato-bold", sans-serif;
+    font-size: 27px;
+}
+
+#services p{
+    font-family: "lato-regular", sans-serif;
+    font-size: 16px;
+    color: #7a7a7a;
+}
+
+#services .card{
+    border-radius: 20px;
+    border: 0;
+}
+
+#contact{
+    width: 100%;
+    height: 25vh;
+    margin: auto;
+    color: #000;
+    border-radius: 0;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+#contact h1{
+    font-family: "lato-bold", sans-serif;
+    margin-bottom: 70px;
+}
+
+#contact .judul{
+    font-family: "lato-bold", sans-serif;
+}
+
+#contact .sub-judul{
+    font-family: "lato-regular", sans-serif;
+}
+
+
 .footer{
-    background-color: #f5f5f5;
     font-family: "poppin-bold", sans-serif;
     font-size: 15px;
-    color: #212529;
+    color: #636c72;
     padding: 0 30px;
     width: 100%;
     height: auto;
@@ -250,18 +297,16 @@
     margin-right: 15px;
 }
 
-
-
-#services{
-    width: 93%;
-    height: auto;
-    margin: auto;
+.footer .footer-link{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-#services h1{
-    font-family: "lato-bold", sans-serif;
-    font-size: 27px;
-    text-align: center;
+.footer .footer-link .link-items{
+    display: inline-block;
+    margin: 0 10px;
 }
+
 
 

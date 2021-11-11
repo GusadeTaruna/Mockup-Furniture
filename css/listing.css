@@ -1,0 +1,201 @@
+@font-face { 
+    font-family: 'open-sans'; src: url('../font/open-sans/OpenSans-Regular.ttf'); 
+} 
+@font-face { 
+    font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
+} 
+@font-face { 
+    font-family: 'open-bold'; src: url('../font/open-sans/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'poppin-bold'; src: url('../font/poppins/Poppins-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'poppin'; src: url('../font/poppins/Poppins-Regular.otf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-regular'; src: url('../font/lato/Lato-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-bold'; src: url('../font/lato/Lato-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'lato-regular', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.navbar a{
+    color:#333333;
+    font-family: 'lato-bold', sans-serif;
+}
+
+.nav-pad{
+    padding: 5px 85px !important;
+}
+
+.burgermenu{
+    color:#333333;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+} 
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:#333333;
+}
+
+#hero{
+    min-height: 100%;
+    width: 100%;
+    color: #333333;
+    position: relative;
+    padding-top: 70px;
+}
+
+#banner-image{
+    margin: auto;
+    width: 93%;
+    height: 30vh;
+    z-index: -1;
+}
+
+#banner-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.text-banner{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+    text-align: center;
+    font-family: 'lato-black', sans-serif;
+    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
+}
+
+.text-banner h1{
+    font-size: 50px;
+}
+
+.text-banner p{
+    font-size: 17px;
+    font-family: 'lato-bold', sans-serif;
+}
+
+#listing-product{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10px 70px;
+}
+
+#listing-product .judul-filter{
+    font-size: 18px;
+    font-family: 'lato-black', sans-serif;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+#listing-product .sub-filter{
+    font-size: 14px;
+    font-family: 'lato-bold', sans-serif;
+    color: #6b6b6b;
+    margin-bottom: 18px;
+}
+
+#listing-product .size-choice{
+    border: 1px solid #ccc ;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+    margin-right: 10px;
+    transition: .5s ease;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+#listing-product .size-choice:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+#listing-product .top-image{
+    margin: auto;
+    height: 35vh;
+    width: auto;
+    position: relative;
+}
+
+#listing-product .top-image img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#listing-product .furni-info{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.furni-info .furni-name{
+    font-family: 'lato-regular', sans-serif;
+}
+
+.furni-info .furni-price{
+    font-family: 'lato-bold', sans-serif;
+    color:#333333;
+}
+
+.footer{
+    font-family: "poppin-bold", sans-serif;
+    font-size: 15px;
+    color: #636c72;
+    padding: 0 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.footer .icon-social{
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.footer .footer-link{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer-link .link-items{
+    display: inline-block;
+    margin: 0 10px;
+}
