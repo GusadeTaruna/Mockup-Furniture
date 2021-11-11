@@ -33,6 +33,7 @@
     padding: 0;
     font-family: 'lato-bold', sans-serif;
     box-sizing: border-box;
+    border-radius: 20px;
 }
 
 #hero{
@@ -43,7 +44,7 @@
 }
 
 .navbar a{
-    color:#198754;
+    color:#212529;
 }
 
 .nav-pad{
@@ -51,7 +52,7 @@
 }
 
 .burgermenu{
-    color:#198754;
+    color:#212529;
 }
 
 .navbar-collapse{
@@ -101,11 +102,11 @@
 
 .text-banner p{
     position: absolute;
-    top: 46%;
+    top: 53%;
     left: 10%;
     color: #fff;
-    font-size: 30px;
-    font-family: 'lato-regular', sans-serif;
+    font-size: 17px;
+    font-family: 'lato-bold', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
 }
 
@@ -160,7 +161,8 @@
 #top-picks .judul{
     font-family: 'poppin-bold', sans-serif;
     text-align: center;
-    color:#198754;
+    color:#212529;
+    font-size: 35px;
 }
 
 #top-picks .sub-judul{
@@ -195,7 +197,7 @@
 
 .furni-info .furni-price{
     font-family: 'lato-bold', sans-serif;
-    color:#198754;
+    color:#212529;
 }
 
 #new-arrival{
@@ -221,7 +223,6 @@
 }
 
 #new-arrival .arrival-text{
-    padding: 50px;
     font-family: 'lato-bold', sans-serif;
 }
 
@@ -235,17 +236,32 @@
 
 .footer{
     background-color: #f5f5f5;
-    font-family: "poppin-bold";
+    font-family: "poppin-bold", sans-serif;
     font-size: 15px;
-    color: #198754;
+    color: #212529;
     padding: 0 30px;
     width: 100%;
     height: auto;
+    border-radius: 0;
 }
 
 .footer .icon-social{
     font-size: 25px;
     margin-right: 15px;
+}
+
+
+
+#services{
+    width: 93%;
+    height: auto;
+    margin: auto;
+}
+
+#services h1{
+    font-family: "lato-bold", sans-serif;
+    font-size: 27px;
+    text-align: center;
 }
 
 
