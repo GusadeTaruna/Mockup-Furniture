@@ -44,7 +44,7 @@
     width: 100%;
     color: #333333;
     position: relative;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .swiper {
@@ -58,14 +58,14 @@
 }
 
 .navbar-logo{
-    width: 120px;
+    width: 100px;
     height: auto;
     border-radius: 0;
     margin-left: 30px;
 }
 
 .navbar a{
-    color:#2ba62b;
+    color: #198754;
     transition: .5s ease;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .burgermenu{
-    color:#2ba62b;
+    color: #198754;
 }
 
 .navbar-collapse{
@@ -87,7 +87,6 @@
 
 .navbar-expand-lg .navbar-nav .nav-link{
     padding-right: 30px !important;
-    font-size: 18px;
     text-align: center;
 }
 
@@ -128,7 +127,7 @@
 
 .text-banner h1{
     font-family: 'metropolis-black', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     margin-bottom: 0;
 }
 
@@ -137,74 +136,97 @@
     font-family: 'metropolis-med', sans-serif;
 }
 
-#deals{
+#desc{
     width: 100%;
     height: auto;
-    margin: auto;
-    padding: 40px;
+    margin: 120px 0;
+    padding: 50px 150px;
 }
 
-.deals-image{
-    width: 87%;
-    height: 300px;
+#desc .judul{
+    font-family: 'metropolis-bold', sans-serif;
+    font-size: 40px;
+    color: #198754;
+}
+
+#desc .sub-judul{
+    font-family: 'metropolis', sans-serif;
+    font-size: 18px;
+   
+}
+
+#desc .desc-btn{
+    margin-right: 20px;
+}
+
+#desc .desc-image{
+    width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
-    margin: auto;
 }
 
-.deals-image img{
+#desc .desc-image img{
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    transition: .5s ease;
 }
 
-.deals-image:hover img {
-    -webkit-transform: scale(1.05,1.05);
-    -moz-transform: scale(1.05,1.05);
-    transform: scale(1.05,1.05);
+#project{
+    width: 100%;
+    height: 100%;
+    margin: 125px 0;
+    padding: 0px;
+    overflow-x: hidden;
+    border-radius: 0;
 }
 
-.deals-image:after {
+#project .top-image{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#project .top-image img{
+    width: 100%;
+    height: 60vh;
+    border-radius: 0;
+}
+
+.top-image:after {
+    object-fit: contain;
+    object-position: center;
     content:'';
     position:absolute;
     width:100%; 
     height:100%;
     top:0; 
     left:0;
-    background:rgba(0,0,0,0.3);
-    opacity:0;
-    border-radius: 20px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.deals-image:hover:after {
-    opacity:1;
+    background:rgba(32, 73, 38, 0.85);
+    border-radius: 0;
+    opacity: 1;
 }
 
-.deals-image h1{
+.top-image .text-image{
     position: absolute;
-    bottom: 10%;
-    left: 12%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 35px;
-    font-family: 'metropolis-black', sans-serif;
-    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
+    width: 75%;
 }
 
-.deals-image p{
-    position: absolute;
-    bottom: 23%;
-    left: 12%;
-    color: #fff;
-    font-size: 20px;
+.top-image .text-image h1{
+    font-size: 40px;
+    font-family: 'metropolis-bold', sans-serif;
+}
+
+.top-image .text-image p{
+    font-size: 18px;
     font-family: 'metropolis', sans-serif;
-    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
-    z-index: 2;
 }
 
 #top-picks{
@@ -217,7 +239,7 @@
 #top-picks .judul{
     font-family: 'metropolis-bold', sans-serif;
     text-align: center;
-    color:#333333;
+    color: #198754;
     font-size: 35px;
 }
 
@@ -225,10 +247,10 @@
     text-align: center;
     color: #666666;
     font-size: 18px;
-    font-family: 'metropolis-regular', sans-serif;
+    font-family: 'metropolis', sans-serif;
 }
 
-#top-picks .top-image{
+#top-picks .picks-image{
     margin: auto;
     height: 35vh;
     width: 100%;
@@ -237,7 +259,7 @@
     margin: auto;
 }
 
-#top-picks .top-image img{
+#top-picks .picks-image img{
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -247,13 +269,13 @@
     transition: .5s ease;
 }
 
-.top-image:hover img {
+.picks-image:hover img {
     -webkit-transform: scale(1.05,1.05);
     -moz-transform: scale(1.05,1.05);
     transform: scale(1.05,1.05);
 }
 
-.top-image:after {
+.picks-image:after {
     content:'';
     position:absolute;
     width:100%; 
@@ -266,7 +288,7 @@
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
-.top-image:hover:after {
+.picks-image:hover:after {
     opacity:1;
 }
 
@@ -283,68 +305,6 @@
 .furni-info .furni-price{
     font-family: 'lato-bold', sans-serif;
     color:#333333;
-}
-
-#new-arrival{
-    width: 93%;
-    height: 60vh;
-    margin: auto;
-    color: #fff;
-    background: #c5c6c8;
-}
-
-#new-arrival .image{
-    margin: auto;
-    height: 60vh;
-    width: auto;
-    position: relative;
-    padding: 50px;
-}
-
-#new-arrival .image img{
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-}
-
-#new-arrival .arrival-text{
-    font-family: 'metropolis-bold', sans-serif;
-}
-
-#new-arrival .arrival-text .text-top,
-#new-arrival .arrival-text .text-price{
-    font-size: 20px;
-    font-family: 'metropolis-bold', sans-serif;
-}
-
-#new-arrival .arrival-text .text-bot{
-    font-size: 50px;
-    font-family: 'metropolis-bold', sans-serif;
-}
-
-
-#services{
-    width: 93%;
-    height: auto;
-    margin: auto;
-    margin-top: 90px;
-}
-
-#services h1{
-    font-family: "metropolis-bold", sans-serif;
-    font-size: 27px;
-}
-
-#services p{
-    font-family: "metropolis-regular", sans-serif;
-    font-size: 16px;
-    color: #7a7a7a;
-}
-
-#services .card{
-    border-radius: 20px;
-    border: 0;
 }
 
 #contact{
