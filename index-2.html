@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-2.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,272 +12,181 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Index-2</title>
+    <title>Index</title>
 </head>
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-between">
-        <div class="container-fluid nav-pad">
-            <a class="navbar-brand" href="#">Brand Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars burgermenu"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Portofolio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </nav>
     <section id="hero">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between shadow">
+            <div class="container-fluid nav-pad">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portofolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class="col-md-12">
             <div id="banner-image">
-                <img src="img/index-2/3.jpg" alt="" class="elementor-post">
-                <div class="text-banner">
-                    <h1>DISCOVER <span style="font-size: 30px;">THE<br>BEST</span> FURNITURES</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Distinctio.</p>
-                </div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/header.jpg" alt="" class="elementor-post">
+                            <div class="text-banner">
+                                <h1>SAMPLE TITLE</h1>
+                                <!-- <p>SAMPLE SUBTITLE</p> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/header-2.jpg" alt="">
+                            <div class="text-banner">
+                                <h1>SAMPLE TITLE</h1>
+                                <!-- <p>SAMPLE SUBTITLE</p> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/header-3.jpg" alt="">
+                            <div class="text-banner">
+                                <h1>SAMPLE TITLE</h1>
+                                <!-- <p>SAMPLE SUBTITLE</p> -->
+                            </div>
+                        </div>
+                  </div>
+                
             </div>
         </div>
     </section>
 
-    <section id="deals">
-        <div class="col-md-12 mt-5 mb-5">
-            <div class="row d-flex justify-content-between">
-                <div class="col-md-4 p-0">
-                    <div class="banner-image">
-                        <p>NEW</p>
-                        <h1>Furniture</h1>
-                        <img src="img/index-2/5.jpg" alt="">
+    <section id="image-gallery">
+        <div class="col-md-12 mb-4">
+            <div class="portfolio-item row mx-auto">
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/header.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-4 p-0">
-                    <div class="banner-image">
-                        <p>HOT</p>
-                        <h1>Furniture</h1>
-                        <img src="img/index-2/10.jpg" alt="">
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/header-2.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-4 p-0">
-                    <div class="banner-image">
-                        <p>SALE</p>
-                        <h1>Furniture</h1>
-                        <img src="img/index-2/7.jpg" alt="">
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/header-3.jpg" alt="">
                     </div>
                 </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-5.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/header.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/header-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/header-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item col-lg-3 col-md-4 col-6 col-sm p-0">
+                    <div class="thumbnail">
+                        <img class="img-fluid" src="img/thumb-5.jpg" alt="">
+                    </div>
+                </div>
+                
+
+                
             </div>
         </div>
-    </section>
 
-    <section id="top-picks" class="mt-4">
-            <h1 class="judul mb-2">Top Picks For You</h1>
-            <p class="sub-judul mb-5">Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights.</p>
-
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/1.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 1</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/2.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 2</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/3.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 3</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/4.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 4</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/5.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 1</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/6.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 2</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/7.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 3</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="top-image">
-                            <img src="img/index-2/8.jpg" alt="">
-                        </div>
-                        <div class="furni-info">
-                            <p class="furni-name mb-0">Furni item name 4</p>
-                            <p class="furni-price">$190.66 – $220.99</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 text-center mb-5">
-                <button class="btn btn-outline-dark text-center w-25 pt-3 pb-3 mt-3">Load More</button>
-            </div>
-    </section>
-
-    <section id="new-arrival" class="mb-5">
-        <div class="row">
-            <div class="col-md-6 my-auto">
-                <div class="image">
-                    <img src="img/index-2/11.png" class="img-responsive" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 my-auto arrival-text">
-                <p class="text-top p-0 mb-2">New arrivals</p>
-                <h1 class="text-bot mb-1">Sample Chair name 1</h1>
-                <p class="text-price p-0 mb-4">$190.66</p>
-                <button type="button" class="btn btn-outline-light w-25 p-2">Check it out</button>
-            </div>
+        <div class="col-md-12 text-center mb-4">
+            <button class="btn btn-outline-success loadMore w-25 p-2"><i class="fas fa-plus"></i> More Items</button>
+            <button class="btn btn-outline-success showLess w-25 p-2"><i class="fas fa-minus"></i> Show Less</button>
         </div>
-    </section>
-
-    <!-- <section id="services">
-        <div class="col-md-12 mb-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                              <div class="col-md-3 my-auto text-center">
-                                <i class="fas fa-clock fa-5x"></i>
-                              </div>
-                              <div class="col-md-9 my-auto">
-                                <h1 class="mb-2">Service 1</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nobis. Veniam optio nihil blanditiis soluta sed beatae, ducimus nobis minus aliquam recusandae quidem inventore explicabo.</p>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                              <div class="col-md-3 my-auto text-center">
-                                <i class="fas fa-chair fa-5x"></i>
-                              </div>
-                              <div class="col-md-9 my-auto">
-                                <h1 class="mb-2">Service 2</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nobis. Veniam optio nihil blanditiis soluta sed beatae, ducimus nobis minus aliquam recusandae quidem inventore explicabo.</p>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                              <div class="col-md-3 my-auto text-center">
-                                <i class="fas fa-credit-card fa-5x"></i>
-                              </div>
-                              <div class="col-md-9 my-auto">
-                                <h1 class="mb-2">Service 3</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nobis. Veniam optio nihil blanditiis soluta sed beatae, ducimus nobis minus aliquam recusandae quidem inventore explicabo.</p>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
-    <section id="contact">
-        <div class="col-md-12 text-center">
-            <h1 class="pt-3">BRAND LOGO</h1>
-        </div>
-        <div class="col-md-12">
-            <div class="row m-0">
-                <div class="col-md-4 text-center">
-                    <p class="judul">CALL US</p>
-                    <p class="sub-judul">(01) 2345 6789</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <p class="judul">ADDRESS</p>
-                    <p class="sub-judul">Jln. satu, Denpasar, Bali</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <p class="judul">E-MAIL</p>
-                    <p class="sub-judul">sample-email@email.com</p>
-                </div>
-            </div>
-        </div>
+        
     </section>
 
     <footer class="footer mt-auto py-4">
-        <div class="row text-center">
-            <div class="col-4 col-md-4 my-auto">
-                <span>© 2021 Brand Name. All Rights Reserved</span>
+        <div class="row">
+            <div class="col-6 col-md-6 my-auto">
+                <div class="footer-container text-start">
+                    <span>Copyright © 2021 Brand Name</span>
+                </div>
             </div>
-            <div class="col-4 col-md-4 my-auto">
-                <span><i class="fab fa-facebook icon-social"></i></span>
-                <span><i class="fab fa-twitter icon-social"></i></span>
-                <span><i class="fab fa-instagram icon-social"></i></span>
-                <span><i class="fab fa-whatsapp icon-social"></i></span>
-            </div>
-            <div class="col-4 col-md-4 my-auto">
-                <ul class="footer-link">
-                    <li class="link-items">About</li>
-                    <li class="link-items">FAQs</li>
-                    <li class="link-items">Contact</li>
-                </ul>
+            <div class="col-6 col-md-6 my-auto">
+                <div class="footer-container text-end">
+                    <span><i class="fab fa-facebook-square icon-social"></i></span>
+                    <span><i class="fab fa-twitter-square icon-social"></i></span>
+                    <span><i class="fab fa-instagram-square icon-social"></i></span>
+                    <span><i class="fab fa-whatsapp-square icon-social"></i></span>
+                </div>
             </div>
         </div>
         
@@ -291,12 +200,63 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <script>
-    window.addEventListener('scroll',(e)=>{
-      const nav = document.querySelector('.navbar');
-      if(window.pageYOffset>0){
-        nav.classList.add("shadow");
-      }else{
-        nav.classList.remove("shadow");
-      }
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        on:{
+            slideChangeTransitionStart: function(){
+                $(".swiper-slide.swiper-slide-active h1").css("left","10%");
+            },
+            slideChange: function(){
+                $(".swiper-slide.swiper-slide-active h1").css("left","0");
+            }
+        }
+        
+    });
+
+
+    // $(".text-banner").fadeOut(function() {
+    //     $(this).html('<span class="font-weight:bold;">WE</span>LOVE').fadeIn();
+    // });
+</script>
+
+<script>
+    jQuery('#banner-image .elementor-post').each(function(i) {
+	    setTimeout(()=>{$(this).addClass('animated fadeInUp')}, 250 * i);
+    });
+
+    jQuery('#image-gallery .portfolio-item').each(function(i) {
+	    setTimeout(()=>{$(this).addClass('animated fadeIn')});
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        size_item = $(".portfolio-item .item").length;
+        x=8;
+        $('.showLess').hide();
+        $('.portfolio-item .item:lt('+x+')').show();
+        $('.loadMore').click(function () {
+            x= (x+8 <= size_item) ? x+8 : size_item;
+            $('.portfolio-item .item:lt('+x+')').slideDown();
+            $('.showLess').show();
+            if(x == size_item){
+                $('.loadMore').hide();
+            }
+        });
+        $('.showLess').click(function () {
+            x=(x-8<0) ? 8 : x-8;
+            $('.portfolio-item .item').not(':lt('+x+')').slideUp();
+            $('.loadMore').show();
+            $('.showLess').show();
+            if(x == 8){
+                $('.showLess').hide();
+            }
+        });
     });
 </script>

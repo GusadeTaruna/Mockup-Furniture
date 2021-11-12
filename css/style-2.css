@@ -44,13 +44,25 @@
     padding-top: 80px;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
 .navbar{
     background-color: #fff;
     border-radius: 0;
 }
 
+.navbar-logo{
+    width: 100px;
+    height: auto;
+    border-radius: 0;
+}
+
 .navbar a{
-    color:#333333;
+    color:#2ba62b;
+    transition: .5s ease;
 }
 
 .nav-pad{
@@ -58,7 +70,7 @@
 }
 
 .burgermenu{
-    color:#333333;
+    color:#2ba62b;
 }
 
 .navbar-collapse{
@@ -69,11 +81,16 @@
     box-shadow: none !important;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 30px !important;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link:hover{
-    color:#333333;
+    color:#1b691b;
 }
 
 #banner-image{
+    padding-top: 20px;
     margin: auto;
     width: 93%;
     height: 90vh;
@@ -85,6 +102,7 @@
     object-position: center;
     width: 100%;
     height: 100%;
+    border-radius: 0;
 }
 
 /* .text-banner{
@@ -93,13 +111,13 @@
 .text-banner{
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: 0;
     color: #fff;
-    font-family: 'lato-black', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
 }
 
 .text-banner h1{
+    font-family: 'lato-black', sans-serif;
     font-size: 50px;
 }
 
@@ -115,21 +133,48 @@
     padding: 40px;
 }
 
-#deals .banner-image{
-    width: 100%;
-    height: 30vh;
-    padding: 0 40px;
+.deals-image{
+    width: 87%;
+    height: 300px;
     position: relative;
+    overflow: hidden;
+    margin: auto;
 }
 
-#deals .banner-image img{
+.deals-image img{
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
 }
 
-#deals .banner-image h1{
+.deals-image:hover img {
+    -webkit-transform: scale(1.05,1.05);
+    -moz-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+}
+
+.deals-image:after {
+    content:'';
+    position:absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.3);
+    opacity:0;
+    border-radius: 20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.deals-image:hover:after {
+    opacity:1;
+}
+
+.deals-image h1{
     position: absolute;
     bottom: 10%;
     left: 12%;
@@ -137,9 +182,10 @@
     font-size: 35px;
     font-family: 'lato-black', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
+    z-index: 2;
 }
 
-#deals .banner-image p{
+.deals-image p{
     position: absolute;
     bottom: 23%;
     left: 12%;
@@ -147,6 +193,7 @@
     font-size: 20px;
     font-family: 'lato-regular', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
+    z-index: 2;
 }
 
 #top-picks{
@@ -172,8 +219,10 @@
 #top-picks .top-image{
     margin: auto;
     height: 35vh;
-    width: auto;
+    width: 100%;
     position: relative;
+    overflow: hidden;
+    margin: auto;
 }
 
 #top-picks .top-image img{
@@ -181,6 +230,32 @@
     object-position: center;
     width: 100%;
     height: 100%;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.top-image:hover img {
+    -webkit-transform: scale(1.05,1.05);
+    -moz-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+}
+
+.top-image:after {
+    content:'';
+    position:absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.3);
+    opacity:0;
+    border-radius: 20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.top-image:hover:after {
+    opacity:1;
 }
 
 #top-picks .furni-info{
@@ -268,12 +343,19 @@
     margin-top: 100px;
 }
 
+#contact .contact-logo{
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+}
+
 #contact h1{
     font-family: "lato-bold", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
+    color: #2ba62b;
     font-family: "lato-bold", sans-serif;
 }
 
@@ -285,7 +367,7 @@
 .footer{
     font-family: "poppin-bold", sans-serif;
     font-size: 15px;
-    color: #636c72;
+    color: #2ba62b;
     padding: 0 30px;
     width: 100%;
     height: auto;
