@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us</title>
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-between">
+        <div class="container-fluid nav-pad">
+            <img src="img/logo.jpg" class="navbar-logo" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars burgermenu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Portofolio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="col-md-12">
+            <div id="banner-image">
+                <img src="img/listing/header.jpg" alt="" class="elementor-post">
+            </div>
+            <div class="text-banner">
+                <h1>DISCOVER OUR FURNITURE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Distinctio.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="col-md-12 text-center">
+            <img src="img/logo.jpg" class="contact-logo mb-4" alt="">
+        </div>
+        <div class="col-md-12">
+            <div class="row m-0">
+                <div class="col-md-4 text-center">
+                    <p class="judul">CALL US</p>
+                    <p class="sub-judul">(01) 2345 6789</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="judul">ADDRESS</p>
+                    <p class="sub-judul">Jln. satu, Denpasar, Bali</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="judul">E-MAIL</p>
+                    <p class="sub-judul">sample-email@email.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-4">
+        <div class="row text-center">
+            <div class="col-4 col-md-4 my-auto">
+                <span>© 2021 Brand Name. All Rights Reserved</span>
+            </div>
+            <div class="col-4 col-md-4 my-auto">
+                <span><i class="fab fa-facebook icon-social"></i></span>
+                <span><i class="fab fa-twitter icon-social"></i></span>
+                <span><i class="fab fa-instagram icon-social"></i></span>
+                <span><i class="fab fa-whatsapp icon-social"></i></span>
+            </div>
+            <div class="col-4 col-md-4 my-auto">
+                <ul class="footer-link">
+                    <li class="link-items">About</li>
+                    <li class="link-items">FAQs</li>
+                    <li class="link-items">Contact</li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    window.addEventListener('scroll',(e)=>{
+      const nav = document.querySelector('.navbar');
+      if(window.pageYOffset>0){
+        nav.classList.add("shadow");
+      }else{
+        nav.classList.remove("shadow");
+      }
+    });
+</script>
