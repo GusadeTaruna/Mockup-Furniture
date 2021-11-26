@@ -16,31 +16,37 @@
 </head>
 <body>
 
-    <section id="hero">
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between shadow">
-            <div class="container-fluid nav-pad">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Portofolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                  </li>
-                </ul>
-              </div>
+    <nav class="navbar fixed-top navbar-expand-lg d-flex justify-content-between">
+        <div class="container-fluid nav-pad">
+            <img src="img/logo.jpg" class="navbar-logo" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars burgermenu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index-2.html">Home 2</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index-3.html">Home 3</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="furniture-listing.html">Catalog </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="portofolio.html">Portofolio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+            </ul>
             </div>
-          </nav>
+        </div>
+    </nav>
+    <section id="hero">
         <div class="col-md-12">
             <div id="banner-image">
                 <div class="swiper">
@@ -48,28 +54,25 @@
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="img/header.jpg" alt="" class="elementor-post">
+                            <img src="img/index-2/3.jpg" alt="">
                             <div class="text-banner">
-                                <h1>SAMPLE TITLE</h1>
-                                <!-- <p>SAMPLE SUBTITLE</p> -->
+                                <h1>DISCOVER <span style="font-size: 30px;">THE<br>BEST</span> FURNITURES</h1>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/header-2.jpg" alt="">
+                            <img src="img/index-2/4.jpg" alt="">
                             <div class="text-banner">
-                                <h1>SAMPLE TITLE</h1>
-                                <!-- <p>SAMPLE SUBTITLE</p> -->
+                                <h1>YOUR ERGONOMIC<br>LIFE PARTNER</h1>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/header-3.jpg" alt="">
+                            <img src="img/index-2/5.jpg" alt="">
                             <div class="text-banner">
-                                <h1>SAMPLE TITLE</h1>
-                                <!-- <p>SAMPLE SUBTITLE</p> -->
+                                <h1>DISCOVER <span style="font-size: 30px;">THE<br>BEST</span> FURNITURES</h1>
                             </div>
                         </div>
-                  </div>
-                
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -173,20 +176,45 @@
         
     </section>
 
-    <footer class="footer mt-auto py-4">
-        <div class="row">
-            <div class="col-6 col-md-6 my-auto">
-                <div class="footer-container text-start">
-                    <span>Copyright © 2021 Brand Name</span>
+    <section id="contact">
+        <div class="col-md-12 text-center">
+            <img src="img/logo.jpg" class="contact-logo mb-4" alt="">
+        </div>
+        <div class="col-md-12">
+            <div class="row m-0">
+                <div class="col-md-4 text-center">
+                    <p class="judul">CALL US</p>
+                    <p class="sub-judul">(01) 2345 6789</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="judul">ADDRESS</p>
+                    <p class="sub-judul">Jln. satu, Denpasar, Bali</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="judul">E-MAIL</p>
+                    <p class="sub-judul">sample-email@email.com</p>
                 </div>
             </div>
-            <div class="col-6 col-md-6 my-auto">
-                <div class="footer-container text-end">
-                    <span><i class="fab fa-facebook-square icon-social"></i></span>
-                    <span><i class="fab fa-twitter-square icon-social"></i></span>
-                    <span><i class="fab fa-instagram-square icon-social"></i></span>
-                    <span><i class="fab fa-whatsapp-square icon-social"></i></span>
-                </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-4">
+        <div class="row text-center">
+            <div class="col-4 col-md-4 my-auto">
+                <span>© 2021 Brand Name. All Rights Reserved</span>
+            </div>
+            <div class="col-4 col-md-4 my-auto">
+                <span><i class="fab fa-facebook icon-social"></i></span>
+                <span><i class="fab fa-twitter icon-social"></i></span>
+                <span><i class="fab fa-instagram icon-social"></i></span>
+                <span><i class="fab fa-whatsapp icon-social"></i></span>
+            </div>
+            <div class="col-4 col-md-4 my-auto">
+                <ul class="footer-link">
+                    <li class="link-items">About</li>
+                    <li class="link-items">FAQs</li>
+                    <li class="link-items">Contact</li>
+                </ul>
             </div>
         </div>
         
@@ -202,18 +230,17 @@
 <script>
     const swiper = new Swiper('.swiper', {
         // Optional parameters
-        direction: 'vertical',
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
         },
         on:{
             slideChangeTransitionStart: function(){
-                $(".swiper-slide.swiper-slide-active h1").css("left","10%");
+                $('.swiper-slide.swiper-slide-active .text-banner').css("left","10%");
             },
             slideChange: function(){
-                $(".swiper-slide.swiper-slide-active h1").css("left","0");
+                $('.swiper-slide.swiper-slide-active .text-banner').css("left","0");
             }
         }
         

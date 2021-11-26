@@ -51,6 +51,19 @@
     box-sizing: border-box;
 }
 
+#hero{
+    min-height: 100%;
+    width: 100%;
+    color: #333333;
+    position: relative;
+    padding-top: 80px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
 .navbar{
     background-color: #fff;
     border-radius: 0;
@@ -97,191 +110,206 @@
     color:#1b691b;
 }
 
-#hero{
-    min-height: 100%;
+#banner-container{
+    padding: 5px 80px;
+    margin-bottom: 50px;
     width: 100%;
-    color: #333333;
-    position: relative;
-    padding-top: 100px;
-    margin-bottom: 70px;
+    height: 100%;
+    z-index: -1;
 }
 
 #banner-image{
+    padding: 0 10px;
     margin: auto;
-    width: 93%;
-    height: 70vh;
-    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 20px;
+    z-index: -1;
+    background:rgba(22, 82, 22, 0.3);
+    position:relative;
 }
 
 #banner-image img{
-    object-fit: cover;
+    object-fit: contain ;
     object-position: center;
+    margin: 15% 0;
     width: 100%;
-    height: 100%;
+    height: 60%;
     border-radius: 0;
 }
 
-#banner-image:after {
-    content: '\A';
-    position: absolute;
-    z-index: 1;
-    width: 100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,.25);
-    opacity: 1;
-    border-radius: 0;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-}
-
-.text-banner{
-    position: absolute;
-    top: 60%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    color: #333333;
-    text-align: left;
-    z-index: 2;
-    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
-}
-
-.text-banner h1{
-    font-size: 70px;
-    font-family: 'metropolis-bold', sans-serif;
-    color: #fff;
-}
-
-.text-banner p{
-    font-size: 17px;
-    font-family: 'metropolis-med', sans-serif;
-    color: #fff;
-}
-
-#team-section{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: 10px 70px;
-    margin-bottom: 60px;
-}
-
-#team-section .judul-team{
-    margin-bottom: 40px;
-    font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
-    text-align: center;
-    color:#1b691b;
-}
-
-#team-section .team-image{
-    margin: auto;
-    width: 90%;
-    height: 50vh;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-#team-section .team-image img{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-}
-
-#team-section .team-image:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    width: 100%; 
-    height:50%;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translate(-70%, -40%);
-    transform: translate(-70%, -40%);
-    background:rgba(27,105,27, 0.6);
-    opacity: 1;
-    border-radius: 0;
-}
-
-#team-section .team-image h1{
+#banner-image h1{
     width: 100%;
     position: absolute;
-    bottom: 9%;
+    bottom: 13%;
     left: 0;
-    margin: auto 20px;
+    margin: auto 40px;
     color: #fff;
-    font-size: 26px;
+    font-size: 50px;
     font-family: 'metropolis-black', sans-serif;
     z-index: 2;
 }
 
-#team-section .team-image p{
+#banner-image p{
     position: absolute;
-    bottom: 3%;
+    bottom: 9%;
     left: 0;
-    margin: auto 20px;
+    margin: auto 40px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'metropolis', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
 
-#about-content{
+.text-banner{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    color: #fff;
+    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
+}
+
+.text-banner h1{
+    font-family: 'metropolis-black', sans-serif;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.text-banner p{
+    font-size: 20px;
+    font-family: 'metropolis-med', sans-serif;
+}
+
+#new-arrival{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    margin-bottom: 70px;
+    color: rgb(61, 61, 61);
+    background:rgba(205, 143, 92, 0.5);
+}
+    
+#new-arrival .image{
+    margin: auto;
+    height: 60vh;
+    width: auto;
+    position: relative;
+}
+
+#new-arrival .image img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#new-arrival .arrival-text{
+    font-family: 'metropolis-bold', sans-serif;
+}
+
+#new-arrival .arrival-text .text-top{
+    font-size: 20px;
+    font-family: 'metropolis-bold', sans-serif;
+}
+
+#new-arrival .arrival-text .text-cat{
+    font-family: 'metropolis-reg', sans-serif;
+}
+
+#new-arrival .arrival-text .text-bot{
+    font-size: 50px;
+    font-family: 'metropolis-bold', sans-serif;
+}
+
+
+#listing-product{
     width: 100%;
     height: auto;
     margin: auto;
     padding: 10px 70px;
-    background-color: #f6f6f4;
 }
 
-#about-content .content-image{
+#listing-product .judul{
+    font-family: 'metropolis-med', sans-serif;
+    color:#1b691b;
+}
+
+#listing-product .sub-judul{
+    font-family: 'metropolis-reg', sans-serif;
+}
+
+#listing-product .search-section{
+    padding: 0 80px;
+}
+
+#listing-product .listing-section{
+    padding: 0 10px;
+}
+
+#listing-product .judul-filter{
+    font-size: 18px;
+    font-family: 'lato-black', sans-serif;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+#listing-product .sub-filter{
+    font-size: 14px;
+    font-family: 'lato-bold', sans-serif;
+    color: #6b6b6b;
+    margin-bottom: 18px;
+}
+
+#listing-product .size-choice{
+    border: 1px solid #ccc ;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+    margin-right: 10px;
+    transition: .5s ease;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+#listing-product .size-choice:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+#listing-product .top-image{
     margin: auto;
-    width: 90%;
-    height: 50vh;
-    margin-bottom: 20px;
+    height: 35vh;
+    width: auto;
+    position: relative;
 }
 
-#about-content .content-image img{
-    object-fit: cover;
+#listing-product .top-image img{
+    background-color: #f6f6f4;
+    object-fit: contain;
     object-position: center;
     width: 100%;
     height: 100%;
     border-radius: 0;
 }
 
-#about-content .content-text{
-    width: 70%;
-    height: auto;
-}
-
-.content-container{
-    margin-bottom: 50px;
-}
-
-.judul-content{
-    margin-top: 30px;
-    font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
-    color:#1b691b;
-}
-
-.desc-content{
-    font-family: "metropolis-reg", sans-serif;
-    font-size: 16px;
-}
-
-footer{
-    font-family: "metropolis-bold", sans-serif;
-    font-size: 15px;
-    color: #2ba62b;
-    padding: 0 30px;
+#listing-product .furni-info{
+    margin-top: 10px;
+    margin-bottom: 30px;
     width: 100%;
-    height: auto;
-    border-radius: 0;
 }
+
+.furni-info .furni-name{
+    font-family: 'fs-reg', sans-serif;
+}
+
+.furni-info .furni-cat{
+    font-family: 'fs-thin', sans-serif;
+    color:#333333;
+}
+
 
 #contact{
     width: 100%;
@@ -289,7 +317,7 @@ footer{
     margin: auto;
     color: #000;
     border-radius: 0;
-    margin-bottom: 0;
+    margin-bottom: 40px;
     margin-top: 100px;
 }
 
@@ -311,6 +339,17 @@ footer{
 
 #contact .sub-judul{
     font-family: "metropolis-regular", sans-serif;
+}
+
+
+.footer{
+    font-family: "metropolis-bold", sans-serif;
+    font-size: 15px;
+    color: #2ba62b;
+    padding: 0 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
 }
 
 .footer .icon-social{
