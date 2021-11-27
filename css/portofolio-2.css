@@ -51,6 +51,11 @@
     box-sizing: border-box;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
 .navbar{
     background-color: #fff;
     border-radius: 0;
@@ -103,13 +108,12 @@
     color: #333333;
     position: relative;
     padding-top: 100px;
-    margin-bottom: 70px;
 }
 
 #banner-image{
     margin: auto;
     width: 93%;
-    height: 70vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -136,7 +140,7 @@
 
 .text-banner{
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 30%;
     transform: translate(-50%, -50%);
     color: #333333;
@@ -146,168 +150,105 @@
 }
 
 .text-banner h1{
-    font-size: 70px;
+    font-size: 65px;
     font-family: 'metropolis-bold', sans-serif;
     color: #fff;
 }
 
 .text-banner p{
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'metropolis-med', sans-serif;
     color: #fff;
 }
 
-#description{
+#porto-image{
     width: 100%;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+#porto-image .porto-header{
+    width: 93%;
     height: auto;
     margin: auto;
-    padding: 10px 70px;
-    margin-bottom: 60px;
 }
 
-#description .logo-img{
-    margin: auto;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
+#porto-image .porto-header h1{
+    font-family: 'metropolis-bold', 'sans-serif';
+    font-size: 50px;
+    color: #198754;
 }
 
-#description .logo-img img{
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
+#porto-image .porto-header p{
+    font-family: 'metropolis', 'sans-serif';
 }
 
-#description .judul-desc{
-    margin-top: 30px;
-    font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
-    color:#1b691b;
-}
-
-#description .sub-desc{
-    font-family: "metropolis-reg", sans-serif;
-    font-size: 16px;
-}
-
-#team-section{
-    width: 100%;
+.gallery {
+    width: 93%;
     height: auto;
     margin: auto;
-    padding: 10px 70px;
-    margin-bottom: 60px;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
 }
 
-#team-section .judul-team{
-    margin-bottom: 40px;
-    font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
+.gallery .pics {
+    background-color: rgb(211, 211, 211);
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.gallery .pics:hover {
+    -webkit-transform: scale(1.02,1.02);
+    -moz-transform: scale(1.02,1.02);
+    transform: scale(1.02,1.02);
+}
+
+.gallery .pics:after {
+    content:'';
+    position:absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.75);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.gallery .pics:hover:after {
+    opacity:1;
+    display: block;
+}
+
+.gallery .pics p{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 45%;
     text-align: center;
-    color:#1b691b;
-}
-
-#team-section .team-image{
-    margin: auto;
-    width: 90%;
-    height: 50vh;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-#team-section .team-image img{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-}
-
-#team-section .team-image:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    width: 100%; 
-    height:50%;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translate(-70%, -40%);
-    transform: translate(-70%, -40%);
-    background:rgba(27,105,27, 0.6);
-    opacity: 1;
-    border-radius: 0;
-}
-
-#team-section .team-image h1{
-    width: 100%;
-    position: absolute;
-    bottom: 9%;
-    left: 0;
-    margin: auto 20px;
     color: #fff;
-    font-size: 26px;
-    font-family: 'metropolis-black', sans-serif;
-    z-index: 2;
-}
-
-#team-section .team-image p{
-    position: absolute;
-    bottom: 3%;
-    left: 0;
-    margin: auto 20px;
-    color: #fff;
-    font-size: 18px;
+    font-size: 20px;
+    display: none;
     font-family: 'metropolis', sans-serif;
-    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     z-index: 2;
 }
 
-#about-content{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: 10px 70px;
-    background-color: #f6f6f4;
+.gallery .pics:hover p {
+    display: block;
 }
 
-#about-content .content-image{
-    margin: auto;
-    width: 90%;
-    height: 50vh;
-    margin-bottom: 20px;
-}
-
-#about-content .content-image img{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-}
-
-#about-content .content-text{
-    width: 70%;
-    height: auto;
-}
-
-.content-container{
-    margin-bottom: 50px;
-}
-
-.judul-content{
-    margin-top: 30px;
-    font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
-    color:#1b691b;
-}
-
-.desc-content{
-    font-family: "metropolis-reg", sans-serif;
-    font-size: 16px;
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
 footer{
@@ -364,4 +305,22 @@ footer{
 .footer .footer-link .link-items{
     display: inline-block;
     margin: 0 10px;
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
 }
