@@ -301,3 +301,58 @@
     display: inline-block;
     margin: 0 10px;
 }
+
+@media only screen and (max-width: 991px) {
+    #contact .judul{
+        font-size: 14px;
+    }
+
+    #contact .sub-judul{
+        font-size: 13px;
+    }
+
+    footer{
+        font-size: 12px !important;
+    }
+    
+    .sort-text{
+        font-size: 13px;
+    }
+
+    #sort-by .btn-success{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #contact{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #contact .judul{
+        margin-bottom: 5px;
+    }
+
+    #contact .sub-judul{
+        font-size: 11px;
+    }
+
+    #contact .contact-logo{
+        width: 140px;
+    }
+
+    footer{
+        font-size: 12px !important;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
+    }
+
+    #sort-by .btn-success{
+        font-size: 10px;
+        width: 100%;
+    }
+}
