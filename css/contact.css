@@ -165,8 +165,12 @@
 
 #contact-section .contact-container{
     width: 93%;
-    height: 70vh;
+    height: auto;
     margin: auto;
+}
+
+.text-banner h1{
+    font-size: 50px;
 }
 
 .left-contact{
@@ -207,6 +211,7 @@
     width: 100%;
     height: 100%;
     border-radius: 0;
+    display: block;
 }
 
 footer{
@@ -263,4 +268,90 @@ footer{
 .footer .footer-link .link-items{
     display: inline-block;
     margin: 0 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+    .text-banner{
+        left: 45%;
+    }
+
+    .text-banner h1{
+        font-size: 40px;
+    }
+    
+
+    #banner-image:after{
+        background:rgba(0,0,0,.5);
+    }
+
+    #contact-section .contact-container{
+        height: auto;
+    }
+
+    .right-contact .form-image img{
+        display: none;
+    }
+
+    .left-contact{
+        padding: 25px 100px !important
+    }
+
+    .left-contact .judul{
+        font-size: 35px;
+    }
+
+    #contact .judul,
+    #contact .sub-judul{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    .footer .icon-social{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .text-banner h1{
+        font-size: 28px;
+    }
+
+    .left-contact .judul{
+        font-size: 28px;
+    }
+
+    .left-contact .sub-judul{
+        font-size: 12px;
+    }
+
+    #contact-section .contact-container{
+        height: auto;
+        width: 100%;
+    }
+
+    .left-contact{
+        padding: 15px 40px !important;
+    }
+
+    #contact .contact-logo{
+        width: 100px;
+    }
+
+    
+    footer{
+        font-size: 10px;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
+    }
 }

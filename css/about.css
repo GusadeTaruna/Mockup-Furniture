@@ -279,6 +279,7 @@
     width: 90%;
     height: 50vh;
     margin-bottom: 20px;
+    display: block;
 }
 
 #about-content .content-image img{
@@ -364,4 +365,176 @@ footer{
 .footer .footer-link .link-items{
     display: inline-block;
     margin: 0 10px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .text-banner{
+        left: 45%;
+    }
+
+    .judul-content{
+        font-size: 40px;
+    }
+    .desc-content{
+        font-size: 14px;
+    }
+
+    #team-section .team-image h1{
+        font-size: 22px;
+    }
+
+    #team-section .team-image p{
+        font-size: 16px;
+    }
+
+    #team-section .judul-team{
+        font-size: 40px;
+    }
+
+    #team-section .team-image{
+        width: 75%;
+        height: 40vh;
+    }
+
+    #contact .sub-judul{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .text-banner{
+        left: 40%;
+    }
+
+    .text-banner h1{
+        font-size: 45px;
+    }
+
+    .text-banner p{
+        font-size: 15px;
+    }
+
+    .judul-content{
+        font-size: 40px;
+    }
+
+    .desc-content{
+        font-size: 14px;
+    }
+
+    #team-section .team-image{
+        width: 75%;
+        height: 40vh;
+    }
+
+    #team-section .judul-team{
+        font-size: 40px;
+    }
+
+    #team-section .team-image h1{
+        font-size: 20px;
+    }
+
+    #team-section .team-image p{
+        font-size: 15px;
+    }
+
+    #contact .judul{
+        font-size: 14px;
+    }
+
+    #contact .sub-judul{
+        font-size: 13px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+
+    #about-content .content-image{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .text-banner{
+        width: 90%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .judul-content{
+        font-size: 30px;
+    }
+
+    .desc-content{
+        font-size: 13px;
+    }
+
+    #banner-image{
+        width: 100%;
+    }
+
+    #description{
+        width: 100%;
+        padding: 10px 40px;
+    }
+
+    #description .logo-img{
+        height: 18vh;
+    }
+
+    #about-content{
+        padding: 10px 40px;
+    }
+
+    #about-content .content-text{
+        width: 100%;
+    }
+
+    #team-section{
+        padding: 10px 20px;
+    }
+
+    #team-section .judul-team{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    #contact .contact-logo{
+        width: 140px;
+    }
+
+    .nav-pad{
+        padding: 5px 50px !important;
+    }
+
+    #contact{
+        margin-top: 20px;
+    }
+
+    #contact .judul{
+        margin-bottom: 5px;
+    }
+
+    #contact .sub-judul{
+        font-size: 11px;
+    }
+
+    #team-section{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
+    }
+   
 }
