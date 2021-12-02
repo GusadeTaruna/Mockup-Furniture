@@ -150,7 +150,7 @@
 }
 
 .text-banner h1{
-    font-size: 65px;
+    font-size: 55px;
     font-family: 'metropolis-bold', sans-serif;
     color: #fff;
 }
@@ -305,6 +305,129 @@ footer{
 .footer .footer-link .link-items{
     display: inline-block;
     margin: 0 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #weare{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding:0;
+    }
+
+    #weare h1{
+        font-size: 35px;
+    }
+
+    #weare p{
+        font-size: 16px;
+    }
+
+    #desc{
+        padding: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #desc .judul{
+        margin-top: 30px;
+        margin-bottom: 10px !important;
+        font-size: 30px;
+    }
+
+    #desc .sub-judul{
+        font-size: 15px;
+    }
+
+    #project{
+        padding: 0;
+    }
+
+    .top-image .text-image h1{
+        font-size: 30px;
+    }
+
+    .top-image .text-image p{
+        font-size: 15px;
+        padding: 0 !important;
+    }
+
+    #top-picks .judul{
+        font-size: 30px;    
+    }
+
+    #top-picks .sub-judul{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .text-banner{
+        left: 40%;
+    }
+
+    .text-banner h1{
+        font-size: 35px;
+    }
+
+    .gallery {
+        width: 93%;
+        height: auto;
+        margin: auto;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    html,body
+    {
+        overflow-x: hidden; 
+    }
+
+    #banner-image{
+        height: 70vh;
+        width: 100%;
+    }
+
+    #porto-image p{
+        font-size: 13px;
+    }
+
+    .nav-pad{
+        padding: 5px 50px !important;
+    }
+
+    #contact{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #contact .judul{
+        margin-bottom: 5px;
+    }
+
+    #contact .sub-judul{
+        font-size: 11px;
+    }
+
+    #contact .contact-logo{
+        width: 140px;
+    }
+
+    footer{
+        font-size: 12px !important;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 450px) {

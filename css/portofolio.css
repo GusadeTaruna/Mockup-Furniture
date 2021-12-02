@@ -367,3 +367,96 @@
     display: inline-block;
     margin: 0 10px;
 }
+
+@media only screen and (max-width: 1200px) {
+    #banner-image h1{
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .text-banner h1{
+        font-size: 45px;
+    }
+
+    #banner-container{
+        padding: 5px 20px;
+    }
+
+    #banner-image{
+        height: 60vh;
+    }
+
+    #banner-image h1{
+        font-size: 30px;
+    }
+
+    #banner-image p{
+        font-size: 15px;
+    }
+
+    #new-arrival .image{
+        height: 40vh;
+    }
+
+    #new-arrival .arrival-text{
+        padding: 0 30px;
+    }
+
+    #new-arrival .arrival-text .text-top{
+        margin-bottom: 0 !important;
+        font-size: 15px;
+    }
+
+    #new-arrival .arrival-text .text-bot{
+        font-size: 30px;
+    }
+
+    #new-arrival .btn{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    #listing-product{
+        padding: 10px 40px;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    html,body
+    {
+        overflow-x: hidden; 
+    }
+
+    .nav-pad{
+        padding: 5px 50px !important;
+    }
+
+    #contact{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #contact .judul{
+        margin-bottom: 5px;
+    }
+
+    #contact .sub-judul{
+        font-size: 11px;
+    }
+
+    #contact .contact-logo{
+        width: 140px;
+    }
+
+    footer{
+        font-size: 12px !important;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
+    }
+}

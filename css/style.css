@@ -249,9 +249,228 @@
     margin: 0 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+    #weare{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding:0;
+    }
+
+    #weare h1{
+        font-size: 35px;
+    }
+
+    #weare p{
+        font-size: 16px;
+    }
+
+    #desc{
+        padding: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #desc .judul{
+        margin-top: 30px;
+        margin-bottom: 10px !important;
+        font-size: 30px;
+    }
+
+    #desc .sub-judul{
+        font-size: 15px;
+    }
+
+    #project{
+        padding: 0;
+    }
+
+    .top-image .text-image h1{
+        font-size: 30px;
+    }
+
+    .top-image .text-image p{
+        font-size: 15px;
+        padding: 0 !important;
+    }
+
+    #top-picks .judul{
+        font-size: 30px;    
+    }
+
+    #top-picks .sub-judul{
+        font-size: 16px;
+    }
+
+}
+
 @media only screen and (max-width: 991px) {
     .navbar-expand-lg .navbar-nav .nav-link{
         padding: 0 !important;
         margin: 5px 0 !important;
+    }
+
+    .text-banner h1{
+        font-size: 45px;
+    }
+
+    #desc{
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #desc .judul{
+        margin-top: 30px;
+        margin-bottom: 10px !important;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #desc .sub-judul{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    #desc .desc-btn{
+        margin: 0 15px;
+        padding: 10px !important;
+    }
+
+    #project{
+        padding: 0;
+    }
+
+    .top-image .text-image h1{
+        font-size: 30px;
+    }
+
+    .top-image .text-image p{
+        font-size: 15px;
+        padding: 0 !important;
+    }
+
+    #top-picks .judul{
+        font-size: 30px;    
+    }
+
+    #top-picks .sub-judul{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    html,body
+    {
+        overflow-x: hidden; 
+    }
+
+    .text-banner h1{
+        font-size: 30px;
+    }
+
+    #banner-image{
+        height: 70vh;
+        width: 100%;
+    }
+
+    #weare{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding:0 40px;
+    }
+
+    #weare h1{
+        font-size: 25px;
+    }
+
+    #weare p{
+        font-size: 15px;
+    }
+
+    #desc{
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #desc .judul{
+        margin-top: 30px;
+        margin-bottom: 10px !important;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #desc .sub-judul{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    #desc .desc-btn{
+        margin: 0 15px;
+        padding: 10px !important;
+    }
+
+    #project{
+        padding: 0;
+    }
+
+    .top-image .text-image{
+        text-align: left !important;
+    }
+
+    .top-image .text-image h1{
+        font-size: 30px;
+    }
+
+    .top-image .text-image p{
+        font-size: 15px;
+        padding: 0 !important;
+    }
+
+    #top-picks{
+        padding: 0 30px;
+    }
+
+    #top-picks .judul{
+        font-size: 25px;    
+    }
+
+    #top-picks .sub-judul{
+        font-size: 16px;
+    }
+
+    #top-picks .btn{
+        width: 100% !important;
+    }
+
+    .nav-pad{
+        padding: 5px 50px !important;
+    }
+
+    #contact{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #contact .judul{
+        margin-bottom: 5px;
+    }
+
+    #contact .sub-judul{
+        font-size: 11px;
+    }
+
+    #contact .contact-logo{
+        width: 140px;
+    }
+
+    footer{
+        font-size: 12px !important;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
     }
 }
