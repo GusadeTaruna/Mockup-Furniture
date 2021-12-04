@@ -1,17 +1,4 @@
 @font-face { 
-    font-family: 'metropolis'; src: url('../font/metropolis/Metropolis-Regular.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-med'; src: url('../font/metropolis/Metropolis-Medium.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-bold'; src: url('../font/metropolis/Metropolis-Bold.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-black'; src: url('../font/metropolis/Metropolis-Black.otf'); 
-} 
-
-@font-face { 
     font-family: 'fs-reg'; src: url('../font/FSMeridian/FSMeridian-Regular.ttf'); 
 } 
 @font-face { 
@@ -42,18 +29,34 @@
 
 @font-face { 
     font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
+}
+
+@font-face { 
+    font-family: 'open-reg'; src: url('../font/open-sans/OpenSans-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-bold'; src: url('../font/open-sans/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
     box-sizing: border-box;
 }
 
 .navbar{
     background-color: #fff;
     border-radius: 0;
+}
+
+.navbar-nav{
+    font-size: 14px;
 }
 
 .navbar-logo{
@@ -147,13 +150,13 @@
 
 .text-banner h1{
     font-size: 70px;
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-bold', sans-serif;
     color: #fff;
 }
 
 .text-banner p{
     font-size: 17px;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
     color: #fff;
 }
 
@@ -185,12 +188,12 @@
 #description .judul-desc{
     margin-top: 30px;
     font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     color:#1b691b;
 }
 
 #description .sub-desc{
-    font-family: "metropolis-reg", sans-serif;
+    font-family: "open-reg", sans-serif;
     font-size: 16px;
 }
 
@@ -203,9 +206,10 @@
 }
 
 #team-section .judul-team{
+    margin-top: 20px;
     margin-bottom: 40px;
-    font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
+    font-size: 46px;
+    font-family: "open-bold", sans-serif;
     text-align: center;
     color:#1b691b;
 }
@@ -250,7 +254,7 @@
     margin: auto 20px;
     color: #fff;
     font-size: 26px;
-    font-family: 'metropolis-black', sans-serif;
+    font-family: 'open-bold', sans-serif;
     z-index: 2;
 }
 
@@ -261,7 +265,7 @@
     margin: auto 20px;
     color: #fff;
     font-size: 18px;
-    font-family: 'metropolis', sans-serif;
+    font-family: 'open-reg', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -301,18 +305,18 @@
 
 .judul-content{
     margin-top: 30px;
-    font-size: 55px;
-    font-family: "metropolis-bold", sans-serif;
+    font-size: 50px;
+    font-family: "open-bold", sans-serif;
     color:#1b691b;
 }
 
 .desc-content{
-    font-family: "metropolis-reg", sans-serif;
-    font-size: 16px;
+    font-family: "open-reg", sans-serif;
+    font-size: 15px;
 }
 
 footer{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;
@@ -338,17 +342,17 @@ footer{
 }
 
 #contact h1{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "metropolis-regular", sans-serif;
+    font-family: "open-reg", sans-serif;
 }
 
 .footer .icon-social{

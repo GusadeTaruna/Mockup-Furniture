@@ -1,21 +1,4 @@
 @font-face { 
-    font-family: 'metropolis'; src: url('../font/metropolis/Metropolis-Regular.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-med'; src: url('../font/metropolis/Metropolis-Medium.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-bold'; src: url('../font/metropolis/Metropolis-Bold.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-black'; src: url('../font/metropolis/Metropolis-Black.otf'); 
-} 
-
-@font-face { 
-    font-family: 'poppin-bold'; src: url('../font/poppins/Poppins-Medium.otf'); 
-} 
-
-@font-face { 
     font-family: 'poppin'; src: url('../font/poppins/Poppins-Regular.otf'); 
 } 
 
@@ -29,12 +12,24 @@
 
 @font-face { 
     font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
+}
+
+@font-face { 
+    font-family: 'open-reg'; src: url('../font/open-sans/OpenSans-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-bold'; src: url('../font/open-sans/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-semi', sans-serif;
     box-sizing: border-box;
     border-radius: 20px;
 }
@@ -57,15 +52,19 @@
     border-radius: 0;
 }
 
+.navbar-nav{
+    font-size: 14px;
+}
+
 .navbar-logo{
-    width: 120px;
+    width: 100px;
     height: auto;
     border-radius: 0;
     margin-left: 30px;
 }
 
 .navbar a{
-    color:#2ba62b;
+    color: #198754;
     transition: .5s ease;
 }
 
@@ -74,7 +73,7 @@
 }
 
 .burgermenu{
-    color:#2ba62b;
+    color: #198754;
 }
 
 .navbar-collapse{
@@ -87,7 +86,6 @@
 
 .navbar-expand-lg .navbar-nav .nav-link{
     padding-right: 30px !important;
-    font-size: 18px;
     text-align: center;
 }
 
@@ -127,14 +125,14 @@
 }
 
 .text-banner h1{
-    font-family: 'metropolis-black', sans-serif;
+    font-family: 'open-bold', sans-serif;
     font-size: 70px;
     margin-bottom: 0;
 }
 
 .text-banner p{
     font-size: 20px;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-semi', sans-serif;
 }
 
 #deals{
@@ -191,7 +189,7 @@
     left: 12%;
     color: #fff;
     font-size: 35px;
-    font-family: 'metropolis-black', sans-serif;
+    font-family: 'open-bold', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -202,7 +200,7 @@
     left: 12%;
     color: #fff;
     font-size: 20px;
-    font-family: 'metropolis', sans-serif;
+    font-family: 'open-reg', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -215,7 +213,7 @@
 }
 
 #top-picks .judul{
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-bold', sans-serif;
     text-align: center;
     color:#333333;
     font-size: 35px;
@@ -225,7 +223,7 @@
     text-align: center;
     color: #666666;
     font-size: 18px;
-    font-family: 'metropolis-regular', sans-serif;
+    font-family: 'open-reg', sans-serif;
 }
 
 #top-picks .top-image{
@@ -309,18 +307,18 @@
 }
 
 #new-arrival .arrival-text{
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-bold', sans-serif;
 }
 
 #new-arrival .arrival-text .text-top,
 #new-arrival .arrival-text .text-price{
     font-size: 20px;
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-bold', sans-serif;
 }
 
 #new-arrival .arrival-text .text-bot{
     font-size: 50px;
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-bold', sans-serif;
 }
 
 
@@ -332,12 +330,12 @@
 }
 
 #services h1{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     font-size: 27px;
 }
 
 #services p{
-    font-family: "metropolis-regular", sans-serif;
+    font-family: "open-reg", sans-serif;
     font-size: 16px;
     color: #7a7a7a;
 }
@@ -364,22 +362,22 @@
 }
 
 #contact h1{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "metropolis-regular", sans-serif;
+    font-family: "open-reg", sans-serif;
 }
 
 
 .footer{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;

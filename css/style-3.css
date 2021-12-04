@@ -31,10 +31,26 @@
     font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
 } 
 
+@font-face { 
+    font-family: 'jose-bold'; src: url('../font/josefin-sans/JosefinSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-reg'; src: url('../font/open-sans/OpenSans-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-bold'; src: url('../font/open-sans/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
+} 
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
     box-sizing: border-box;
 }
 
@@ -54,6 +70,10 @@
 .navbar{
     background-color: #fff;
     border-radius: 0;
+}
+
+.navbar-nav{
+    font-size: 14px;
 }
 
 .navbar-logo{
@@ -125,14 +145,14 @@
 }
 
 .text-banner h1{
-    font-family: 'metropolis-black', sans-serif;
+    font-family: 'open-bold', sans-serif;
     font-size: 60px;
     margin-bottom: 0;
 }
 
 .text-banner p{
     font-size: 20px;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-semi', sans-serif;
 }
 
 #weare{
@@ -140,17 +160,17 @@
     height: 100%;
     margin-top: 120px;
     margin-bottom: 120px;
-    padding: 0 100px;
+    padding: 0 20px;
 }
 
 #weare h1{
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
     color: #198754;
     font-size: 45px;
 }
 
 #weare p{
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -172,13 +192,13 @@
 }
 
 #desc .judul{
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
     font-size: 40px;
     color: #198754;
 }
 
 #desc .sub-judul{
-    font-family: 'metropolis', sans-serif;
+    font-family: 'open-reg', sans-serif;
     font-size: 18px;
    
 }
@@ -248,12 +268,12 @@
 
 .top-image .text-image h1{
     font-size: 40px;
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
 }
 
 .top-image .text-image p{
     font-size: 18px;
-    font-family: 'metropolis', sans-serif;
+    font-family: 'open-reg', sans-serif;
 }
 
 #top-picks{
@@ -264,7 +284,7 @@
 }
 
 #top-picks .judul{
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
     text-align: center;
     color: #198754;
     font-size: 35px;
@@ -274,7 +294,7 @@
     text-align: center;
     color: #666666;
     font-size: 18px;
-    font-family: 'metropolis', sans-serif;
+    font-family: 'open', sans-serif;
 }
 
 #top-picks .picks-image{
@@ -327,11 +347,11 @@
 }
 
 .furni-info .furni-name{
-    font-family: 'lato-regular', sans-serif;
+    font-family: 'open-reg', sans-serif;
 }
 
 .furni-info .furni-price{
-    font-family: 'lato-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
     color:#333333;
 }
 
@@ -352,22 +372,22 @@
 }
 
 #contact h1{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-semi", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-semi", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "metropolis-regular", sans-serif;
+    font-family: "open-reg", sans-serif;
 }
 
 
 .footer{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-semi", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;

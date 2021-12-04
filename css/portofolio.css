@@ -1,17 +1,4 @@
 @font-face { 
-    font-family: 'metropolis'; src: url('../font/metropolis/Metropolis-Regular.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-med'; src: url('../font/metropolis/Metropolis-Medium.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-bold'; src: url('../font/metropolis/Metropolis-Bold.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-black'; src: url('../font/metropolis/Metropolis-Black.otf'); 
-} 
-
-@font-face { 
     font-family: 'fs-reg'; src: url('../font/FSMeridian/FSMeridian-Regular.ttf'); 
 } 
 @font-face { 
@@ -42,12 +29,24 @@
 
 @font-face { 
     font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
+}
+
+@font-face { 
+    font-family: 'open-reg'; src: url('../font/open-sans/OpenSans-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-bold'; src: url('../font/open-sans/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
     box-sizing: border-box;
 }
 
@@ -67,6 +66,10 @@
 .navbar{
     background-color: #fff;
     border-radius: 0;
+}
+
+.navbar-nav{
+    font-size: 14px;
 }
 
 .navbar-logo{
@@ -146,7 +149,7 @@
     margin: auto 40px;
     color: #fff;
     font-size: 50px;
-    font-family: 'metropolis-black', sans-serif;
+    font-family: 'open-bold', sans-serif;
     z-index: 2;
 }
 
@@ -157,7 +160,7 @@
     margin: auto 40px;
     color: #fff;
     font-size: 20px;
-    font-family: 'metropolis', sans-serif;
+    font-family: 'open-reg', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -171,14 +174,14 @@
 }
 
 .text-banner h1{
-    font-family: 'metropolis-black', sans-serif;
+    font-family: 'open-bold', sans-serif;
     font-size: 60px;
     margin-bottom: 0;
 }
 
 .text-banner p{
     font-size: 20px;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
 }
 
 #new-arrival{
@@ -205,21 +208,21 @@
 }
 
 #new-arrival .arrival-text{
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
 }
 
 #new-arrival .arrival-text .text-top{
     font-size: 20px;
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
 }
 
 #new-arrival .arrival-text .text-cat{
-    font-family: 'metropolis-reg', sans-serif;
+    font-family: 'open-reg', sans-serif;
 }
 
 #new-arrival .arrival-text .text-bot{
     font-size: 50px;
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-semi', sans-serif;
 }
 
 
@@ -231,12 +234,12 @@
 }
 
 #listing-product .judul{
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
     color:#1b691b;
 }
 
 #listing-product .sub-judul{
-    font-family: 'metropolis-reg', sans-serif;
+    font-family: 'open-reg', sans-serif;
 }
 
 #listing-product .search-section{
@@ -328,22 +331,22 @@
 }
 
 #contact h1{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-semi", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-semi", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "metropolis-regular", sans-serif;
+    font-family: "open-regular", sans-serif;
 }
 
 
 .footer{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-semi", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;

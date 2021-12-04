@@ -1,17 +1,4 @@
 @font-face { 
-    font-family: 'metropolis'; src: url('../font/metropolis/Metropolis-Regular.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-med'; src: url('../font/metropolis/Metropolis-Medium.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-bold'; src: url('../font/metropolis/Metropolis-Bold.otf'); 
-} 
-@font-face { 
-    font-family: 'metropolis-black'; src: url('../font/metropolis/Metropolis-Black.otf'); 
-} 
-
-@font-face { 
     font-family: 'fs-reg'; src: url('../font/FSMeridian/FSMeridian-Regular.ttf'); 
 } 
 @font-face { 
@@ -42,18 +29,34 @@
 
 @font-face { 
     font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
+}
+
+@font-face { 
+    font-family: 'open-reg'; src: url('../font/open-sans/OpenSans-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-bold'; src: url('../font/open-sans/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
     box-sizing: border-box;
 }
 
 .navbar{
     background-color: #fff;
     border-radius: 0;
+}
+
+.navbar-nav{
+    font-size: 14px;
 }
 
 .navbar-logo{
@@ -148,13 +151,13 @@
 
 .text-banner h1{
     font-size: 50px;
-    font-family: 'metropolis-bold', sans-serif;
+    font-family: 'open-bold', sans-serif;
     color: #fff;
 }
 
 .text-banner p{
     font-size: 17px;
-    font-family: 'metropolis-med', sans-serif;
+    font-family: 'open-reg', sans-serif;
     color: #fff;
 }
 
@@ -247,7 +250,7 @@
 }
 
 .footer{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;
@@ -273,17 +276,17 @@
 }
 
 #contact h1{
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "metropolis-bold", sans-serif;
+    font-family: "open-bold", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "metropolis-regular", sans-serif;
+    font-family: "open-reg", sans-serif;
 }
 
 .footer .icon-social{
