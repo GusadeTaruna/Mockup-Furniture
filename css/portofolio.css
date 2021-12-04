@@ -41,12 +41,28 @@
 
 @font-face { 
     font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
+}
+
+@font-face { 
+    font-family: 'mons-med'; src: url('../font/montserrat/Montserrat-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-bold'; src: url('../font/montserrat/Montserrat-Bold.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-light'; src: url('../font/montserrat/Montserrat-Light.otf'); 
+} 
+
+@font-face {
+    font-family: 'mons-black'; src: url('../font/montserrat/Montserrat-Black.otf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'open-semi', sans-serif;
+    font-family: 'mons-med', sans-serif;
     box-sizing: border-box;
 }
 
@@ -149,7 +165,7 @@
     margin: auto 40px;
     color: #fff;
     font-size: 50px;
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     z-index: 2;
 }
 
@@ -160,7 +176,7 @@
     margin: auto 40px;
     color: #fff;
     font-size: 20px;
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-light', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -174,14 +190,14 @@
 }
 
 .text-banner h1{
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     font-size: 60px;
     margin-bottom: 0;
 }
 
 .text-banner p{
     font-size: 20px;
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-light', sans-serif;
 }
 
 #new-arrival{
@@ -208,21 +224,21 @@
 }
 
 #new-arrival .arrival-text{
-    font-family: 'open-semi', sans-serif;
+    font-family: 'mons-med', sans-serif;
 }
 
 #new-arrival .arrival-text .text-top{
     font-size: 20px;
-    font-family: 'open-semi', sans-serif;
+    font-family: 'mons-med', sans-serif;
 }
 
 #new-arrival .arrival-text .text-cat{
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-med', sans-serif;
 }
 
 #new-arrival .arrival-text .text-bot{
     font-size: 50px;
-    font-family: 'open-semi', sans-serif;
+    font-family: 'mons-bold', sans-serif;
 }
 
 
@@ -233,13 +249,18 @@
     padding: 10px 70px;
 }
 
+#listing-product a{
+    text-decoration: none;
+    color: #212529;
+}
+
 #listing-product .judul{
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-med', sans-serif;
     color:#1b691b;
 }
 
 #listing-product .sub-judul{
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-light', sans-serif;
 }
 
 #listing-product .search-section{
@@ -331,22 +352,22 @@
 }
 
 #contact h1{
-    font-family: "open-semi", sans-serif;
+    font-family: "mons-med", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "open-semi", sans-serif;
+    font-family: "mons-med", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "open-regular", sans-serif;
+    font-family: "mons-light", sans-serif;
 }
 
 
 .footer{
-    font-family: "open-semi", sans-serif;
+    font-family: "mons-med", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;

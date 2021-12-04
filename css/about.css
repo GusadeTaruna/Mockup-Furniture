@@ -41,12 +41,28 @@
 
 @font-face { 
     font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
+}
+
+@font-face { 
+    font-family: 'mons-med'; src: url('../font/montserrat/Montserrat-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-bold'; src: url('../font/montserrat/Montserrat-Bold.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-light'; src: url('../font/montserrat/Montserrat-Light.otf'); 
+} 
+
+@font-face {
+    font-family: 'mons-black'; src: url('../font/montserrat/Montserrat-Black.otf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'open-semi', sans-serif;
+    font-family: 'mons-med', sans-serif;
     box-sizing: border-box;
 }
 
@@ -150,13 +166,13 @@
 
 .text-banner h1{
     font-size: 70px;
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     color: #fff;
 }
 
 .text-banner p{
     font-size: 17px;
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-light', sans-serif;
     color: #fff;
 }
 
@@ -188,12 +204,12 @@
 #description .judul-desc{
     margin-top: 30px;
     font-size: 55px;
-    font-family: "open-bold", sans-serif;
+    font-family: "mons-bold", sans-serif;
     color:#1b691b;
 }
 
 #description .sub-desc{
-    font-family: "open-reg", sans-serif;
+    font-family: "mons-light", sans-serif;
     font-size: 16px;
 }
 
@@ -209,7 +225,7 @@
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: 46px;
-    font-family: "open-bold", sans-serif;
+    font-family: "mons-bold", sans-serif;
     text-align: center;
     color:#1b691b;
 }
@@ -254,7 +270,7 @@
     margin: auto 20px;
     color: #fff;
     font-size: 26px;
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     z-index: 2;
 }
 
@@ -265,7 +281,7 @@
     margin: auto 20px;
     color: #fff;
     font-size: 18px;
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-light', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -306,17 +322,17 @@
 .judul-content{
     margin-top: 30px;
     font-size: 50px;
-    font-family: "open-bold", sans-serif;
+    font-family: "mons-bold", sans-serif;
     color:#1b691b;
 }
 
 .desc-content{
-    font-family: "open-reg", sans-serif;
+    font-family: "mons-light", sans-serif;
     font-size: 15px;
 }
 
 footer{
-    font-family: "open-bold", sans-serif;
+    font-family: "mons-bold", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;
@@ -342,17 +358,17 @@ footer{
 }
 
 #contact h1{
-    font-family: "open-bold", sans-serif;
+    font-family: "mons-bold", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "open-bold", sans-serif;
+    font-family: "mons-bold", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "open-reg", sans-serif;
+    font-family: "mons-light", sans-serif;
 }
 
 .footer .icon-social{
