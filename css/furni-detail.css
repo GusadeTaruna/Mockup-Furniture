@@ -1,0 +1,232 @@
+@font-face { 
+    font-family: 'metropolis'; src: url('../font/metropolis/Metropolis-Regular.otf'); 
+} 
+@font-face { 
+    font-family: 'metropolis-med'; src: url('../font/metropolis/Metropolis-Medium.otf'); 
+} 
+@font-face { 
+    font-family: 'metropolis-bold'; src: url('../font/metropolis/Metropolis-Bold.otf'); 
+} 
+@font-face { 
+    font-family: 'metropolis-black'; src: url('../font/metropolis/Metropolis-Black.otf'); 
+} 
+
+@font-face { 
+    font-family: 'fs-reg'; src: url('../font/FSMeridian/FSMeridian-Regular.ttf'); 
+} 
+@font-face { 
+    font-family: 'fs-bold'; src: url('../font/FSMeridian/FSMeridian-Bold.ttf'); 
+} 
+@font-face { 
+    font-family: 'fs-med'; src: url('../font/FSMeridian/FSMeridian-Medium.ttf'); 
+} 
+@font-face { 
+    font-family: 'fs-thin'; src: url('../font/FSMeridian/FSMeridian-Thin.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'poppin-bold'; src: url('../font/poppins/Poppins-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'poppin'; src: url('../font/poppins/Poppins-Regular.otf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-regular'; src: url('../font/lato/Lato-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-bold'; src: url('../font/lato/Lato-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'metropolis-med', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.navbar-logo{
+    width: 100px;
+    height: auto;
+    border-radius: 0;
+    margin-left: 30px;
+}
+
+.navbar a{
+    color: #198754;
+    transition: .5s ease;
+}
+
+.nav-pad{
+    padding: 5px 85px !important;
+}
+
+.burgermenu{
+    color: #198754;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+} 
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 30px !important;
+    text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:focus{
+    outline: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:#1b691b;
+}
+
+#furni-detail{
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+    padding-top:10%;
+    margin: auto;
+}
+
+#furni-detail .image-furni{
+    margin: auto;
+    width: 80%;
+    height: 50vh;
+    position: relative;
+}
+
+#furni-detail .image-furni img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.footer{
+    font-family: "metropolis-bold", sans-serif;
+    font-size: 15px;
+    color: #2ba62b;
+    padding: 0 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+#contact{
+    width: 100%;
+    height: 25vh;
+    margin: auto;
+    color: #000;
+    border-radius: 0;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+#contact .contact-logo{
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+}
+
+#contact h1{
+    font-family: "metropolis-bold", sans-serif;
+    margin-bottom: 70px;
+}
+
+#contact .judul{
+    color: #2ba62b;
+    font-family: "metropolis-bold", sans-serif;
+}
+
+#contact .sub-judul{
+    font-family: "metropolis-regular", sans-serif;
+}
+
+.footer .icon-social{
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.footer .footer-link{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer-link .link-items{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    #contact .judul{
+        font-size: 14px;
+    }
+
+    #contact .sub-judul{
+        font-size: 13px;
+    }
+
+    footer{
+        font-size: 12px !important;
+    }
+    
+    .sort-text{
+        font-size: 13px;
+    }
+
+    #sort-by .btn-success{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #contact{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #contact .judul{
+        margin-bottom: 5px;
+    }
+
+    #contact .sub-judul{
+        font-size: 11px;
+    }
+
+    #contact .contact-logo{
+        width: 140px;
+    }
+
+    footer{
+        font-size: 12px !important;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
+    }
+
+    #sort-by .btn-success{
+        font-size: 10px;
+        width: 100%;
+    }
+}
