@@ -28,12 +28,28 @@
 
 @font-face { 
     font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
+}
+
+@font-face { 
+    font-family: 'mons-med'; src: url('../font/montserrat/Montserrat-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-bold'; src: url('../font/montserrat/Montserrat-Bold.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-light'; src: url('../font/montserrat/Montserrat-Light.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-black'; src: url('../font/montserrat/Montserrat-Black.otf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-med', sans-serif;
     box-sizing: border-box;
 }
 
@@ -128,7 +144,7 @@
 }
 
 .text-banner h1{
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     font-size: 60px;
     margin-bottom: 0;
 }
@@ -190,7 +206,7 @@
 }
 
 .more-text{
-    font-family: "poppin";
+    font-family: "mons-light";
     margin: 10px 0;
     font-size: 20px;
 }
@@ -212,22 +228,22 @@
 }
 
 #contact h1{
-    font-family: "open-semi", sans-serif;
+    font-family: "mons-bold", sans-serif;
     margin-bottom: 70px;
 }
 
 #contact .judul{
     color: #2ba62b;
-    font-family: "open-semi", sans-serif;
+    font-family: "mons-bold", sans-serif;
 }
 
 #contact .sub-judul{
-    font-family: "open-reg", sans-serif;
+    font-family: "mons-light", sans-serif;
 }
 
 
 .footer{
-    font-family: "open-semi", sans-serif;
+    font-family: "mons-light", sans-serif;
     font-size: 15px;
     color: #2ba62b;
     padding: 0 30px;

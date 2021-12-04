@@ -24,12 +24,29 @@
 
 @font-face { 
     font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
+}
+
+
+@font-face { 
+    font-family: 'mons-med'; src: url('../font/montserrat/Montserrat-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-bold'; src: url('../font/montserrat/Montserrat-Bold.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-light'; src: url('../font/montserrat/Montserrat-Light.otf'); 
+} 
+
+@font-face {
+    font-family: 'mons-black'; src: url('../font/montserrat/Montserrat-Black.otf'); 
 } 
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'open-semi', sans-serif;
+    font-family: 'mons-med', sans-serif;
     box-sizing: border-box;
     border-radius: 20px;
 }
@@ -125,14 +142,14 @@
 }
 
 .text-banner h1{
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     font-size: 70px;
     margin-bottom: 0;
 }
 
 .text-banner p{
     font-size: 20px;
-    font-family: 'open-semi', sans-serif;
+    font-family: 'mons-light', sans-serif;
 }
 
 #deals{
@@ -189,7 +206,7 @@
     left: 12%;
     color: #fff;
     font-size: 35px;
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -200,7 +217,7 @@
     left: 12%;
     color: #fff;
     font-size: 20px;
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-light', sans-serif;
     transition: all cubic-bezier(.66, .51, .02, .98) 2s;
     z-index: 2;
 }
@@ -213,7 +230,7 @@
 }
 
 #top-picks .judul{
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
     text-align: center;
     color:#333333;
     font-size: 35px;
@@ -223,7 +240,7 @@
     text-align: center;
     color: #666666;
     font-size: 18px;
-    font-family: 'open-reg', sans-serif;
+    font-family: 'mons-light', sans-serif;
 }
 
 #top-picks .top-image{
@@ -307,18 +324,18 @@
 }
 
 #new-arrival .arrival-text{
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
 }
 
 #new-arrival .arrival-text .text-top,
 #new-arrival .arrival-text .text-price{
     font-size: 20px;
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
 }
 
 #new-arrival .arrival-text .text-bot{
     font-size: 50px;
-    font-family: 'open-bold', sans-serif;
+    font-family: 'mons-bold', sans-serif;
 }
 
 
@@ -330,12 +347,12 @@
 }
 
 #services h1{
-    font-family: "open-bold", sans-serif;
+    font-family: "mons-bold", sans-serif;
     font-size: 27px;
 }
 
 #services p{
-    font-family: "open-reg", sans-serif;
+    font-family: "mons-light", sans-serif;
     font-size: 16px;
     color: #7a7a7a;
 }
