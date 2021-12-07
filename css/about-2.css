@@ -1,0 +1,574 @@
+@font-face { 
+    font-family: 'fs-reg'; src: url('../font/FSMeridian/FSMeridian-Regular.ttf'); 
+} 
+@font-face { 
+    font-family: 'fs-bold'; src: url('../font/FSMeridian/FSMeridian-Bold.ttf'); 
+} 
+@font-face { 
+    font-family: 'fs-med'; src: url('../font/FSMeridian/FSMeridian-Medium.ttf'); 
+} 
+@font-face { 
+    font-family: 'fs-thin'; src: url('../font/FSMeridian/FSMeridian-Thin.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'poppin-bold'; src: url('../font/poppins/Poppins-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'poppin'; src: url('../font/poppins/Poppins-Regular.otf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-regular'; src: url('../font/lato/Lato-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-bold'; src: url('../font/lato/Lato-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'lato-black'; src: url('../font/lato/Lato-Black.ttf'); 
+}
+
+@font-face { 
+    font-family: 'open-reg'; src: url('../font/open-sans/OpenSans-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-bold'; src: url('../font/open-sans/OpenSans-Bold.ttf'); 
+} 
+
+@font-face { 
+    font-family: 'open-semi'; src: url('../font/open-sans/OpenSans-Semibold.ttf'); 
+}
+
+@font-face { 
+    font-family: 'mons-med'; src: url('../font/montserrat/Montserrat-Medium.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-bold'; src: url('../font/montserrat/Montserrat-Bold.otf'); 
+} 
+
+@font-face { 
+    font-family: 'mons-light'; src: url('../font/montserrat/Montserrat-Light.otf'); 
+} 
+
+@font-face {
+    font-family: 'mons-black'; src: url('../font/montserrat/Montserrat-Black.otf'); 
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'mons-med', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.navbar-nav{
+    font-size: 14px;
+}
+
+.navbar-logo{
+    width: 100px;
+    height: auto;
+    border-radius: 0;
+    margin-left: 30px;
+}
+
+.navbar a{
+    color: #198754;
+    transition: .5s ease;
+}
+
+.nav-pad{
+    padding: 5px 85px !important;
+}
+
+.burgermenu{
+    color: #198754;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+} 
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 30px !important;
+    text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:focus{
+    outline: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:#1b691b;
+}
+
+#hero{
+    min-height: 100%;
+    width: 100%;
+    color: #333333;
+    position: relative;
+    padding-top: 100px;
+    margin-bottom: 70px;
+}
+
+#banner-image{
+    margin: auto;
+    width: 93%;
+    height: 70vh;
+    position: relative;
+}
+
+#banner-image img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+#banner-image:after {
+    content: '\A';
+    position: absolute;
+    z-index: 1;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,.25);
+    opacity: 1;
+    border-radius: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.text-banner{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+    text-align: left;
+    z-index: 2;
+    transition: all cubic-bezier(.66, .51, .02, .98) 2s;
+}
+
+.text-banner h1{
+    font-size: 70px;
+    font-family: 'mons-bold', sans-serif;
+    color: #fff;
+}
+
+.text-banner p{
+    font-size: 17px;
+    font-family: 'mons-light', sans-serif;
+    color: #fff;
+}
+
+#description{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10px 70px;
+    margin-bottom: 60px;
+}
+
+#description .logo-img{
+    margin: auto;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#description .logo-img img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.judul-content{
+    margin-top: 30px;
+    font-size: 45px;
+    color:#1b691b;
+}
+
+.desc-content{
+    font-family: "mons-light", sans-serif;
+    font-size: 15px;
+}
+
+#timeline{
+    padding-top: 60px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.timeline-info{
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.timeline-info h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #198754;
+}
+
+.timeline-info p{
+    width: 60%;
+    margin: auto;
+    font-size: 14px;
+    font-family: 'mons-light', sans-serif;
+}
+
+.timeline-bar{
+    position: relative;
+}
+
+.timeline-bar:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #198754;
+}
+
+.timeline-card{
+    width: 92%;
+    position: relative;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.timeline-card .card-header{
+    display: flex;
+    align-items: center;
+    background-color:transparent;
+    border: 0;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+/* .timeline-card .card-header:after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #198754;
+    border-radius: 100%;
+} */
+
+/* .timeline-card .card-header:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -30px;
+    top: 50%;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #1b691b;
+} */
+
+.timeline-card .card-header .card-number{
+    width: 50px;
+    height: 50px;
+    background-color: #198754;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-card .card-header .card-title{
+    text-transform: uppercase;
+    padding: 15px 0 15px 20px;
+    margin: 0;
+    color: #198754;
+}
+
+.timeline-card .card-header .card-title h6{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-card .card-header .card-title h2{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: 'mons-bold', sans-serif;
+}
+
+.timeline-card .card-body{
+    padding: 0;
+}
+
+.timeline-card .card-body p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #212529;
+    font-family: 'mons-light', sans-serif;
+}
+
+.col-sm-6:nth-child(even) .timeline-card{
+    margin-top: 130px;
+}
+
+/* .col-sm-6:nth-child(even) .timeline-card .card-header:after{
+    right: calc(120% + 10px);
+}
+
+.col-sm-6:nth-child(odd) .timeline-card .card-header:after{
+    left: calc(100% + 44px);
+} */
+
+footer{
+    font-family: "mons-bold", sans-serif;
+    font-size: 15px;
+    color: #2ba62b;
+    padding: 0 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+#contact{
+    width: 100%;
+    height: 25vh;
+    margin: auto;
+    color: #000;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+#contact .contact-logo{
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+}
+
+#contact h1{
+    font-family: "mons-bold", sans-serif;
+    margin-bottom: 70px;
+}
+
+#contact .judul{
+    color: #2ba62b;
+    font-family: "mons-bold", sans-serif;
+}
+
+#contact .sub-judul{
+    font-family: "mons-light", sans-serif;
+}
+
+.footer .icon-social{
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.footer .footer-link{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer-link .link-items{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-banner{
+        left: 45%;
+    }
+
+    .judul-content{
+        font-size: 40px;
+    }
+    .desc-content{
+        font-size: 14px;
+    }
+
+    #team-section .team-image h1{
+        font-size: 22px;
+    }
+
+    #team-section .team-image p{
+        font-size: 16px;
+    }
+
+    #team-section .judul-team{
+        font-size: 40px;
+    }
+
+    #team-section .team-image{
+        width: 75%;
+        height: 40vh;
+    }
+
+    #contact .sub-judul{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .text-banner{
+        left: 40%;
+    }
+
+    .text-banner h1{
+        font-size: 45px;
+    }
+
+    .text-banner p{
+        font-size: 15px;
+    }
+
+    .judul-content{
+        font-size: 40px;
+    }
+
+    .desc-content{
+        font-size: 14px;
+    }
+
+    #team-section .team-image{
+        width: 75%;
+        height: 40vh;
+    }
+
+    #team-section .judul-team{
+        font-size: 40px;
+    }
+
+    #team-section .team-image h1{
+        font-size: 20px;
+    }
+
+    #team-section .team-image p{
+        font-size: 15px;
+    }
+
+    #contact .judul{
+        font-size: 14px;
+    }
+
+    #contact .sub-judul{
+        font-size: 13px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+
+    #about-content .content-image{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .text-banner{
+        width: 90%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .judul-content{
+        font-size: 30px;
+    }
+
+    .desc-content{
+        font-size: 13px;
+    }
+
+    #banner-image{
+        width: 100%;
+    }
+
+    #description{
+        width: 100%;
+        padding: 10px 40px;
+    }
+
+    #description .logo-img{
+        height: 18vh;
+    }
+
+    #about-content{
+        padding: 10px 40px;
+    }
+
+    #about-content .content-text{
+        width: 100%;
+    }
+
+    #team-section{
+        padding: 10px 20px;
+    }
+
+    #team-section .judul-team{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    #contact .contact-logo{
+        width: 140px;
+    }
+
+    .nav-pad{
+        padding: 5px 50px !important;
+    }
+
+    #contact{
+        margin-top: 20px;
+    }
+
+    #contact .judul{
+        margin-bottom: 5px;
+    }
+
+    #contact .sub-judul{
+        font-size: 11px;
+    }
+
+    #team-section{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    .footer .icon-social{
+        font-size: 15px;
+        margin-right: 0;
+    }
+   
+}
