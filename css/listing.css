@@ -187,11 +187,193 @@
     border-radius: 50px !important;
 }
 
+#featured{
+    width: 100%;
+    height: 100%;
+    padding: 0 70px;
+    margin-bottom: 100px;
+}
+
+#featured .featured-list .category-text{
+    font-family: 'mons-light', sans-serif;
+}
+
+#featured .featured-list .vl {
+    border-left: 3px solid green;
+    height: auto;
+    padding-left: 10px;
+    margin: 20px 0;
+    transition: .3s ease;
+}
+
+#featured .featured-list .vl:hover {
+    border-left: 25px solid green;
+    color: green;
+}
+
+#featured .featured-list a{
+    text-decoration: none;
+    color: #212529;
+}
+
+#featured h2{
+    font-family: 'mons-bold', sans-serif;
+    font-size: 28px;
+}
+
+#featured .featured-image-left{
+    margin: auto;
+    width: 100%;
+    height: 62vh;
+    position: relative;
+    background: #999;
+    margin-bottom: 20px;
+}
+
+#featured .featured-image-left img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+#featured .featured-image-left:after {
+    content:'';
+    position:absolute;
+    width:40%; 
+    height:10%;
+    bottom:0; 
+    left:0;
+    background:green;
+    opacity:1;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+#featured .featured-image-left h1{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    margin: auto 0;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'mons-bold', sans-serif;
+    z-index: 2;
+}
+
+#featured .featured-image-right:after {
+    content:'';
+    position:absolute;
+    width:40%; 
+    height:15%;
+    bottom:0; 
+    left:0;
+    background:green;
+    opacity:1;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+#featured .featured-image-right h1{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    margin: auto 0;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'mons-bold', sans-serif;
+    z-index: 2;
+}
+
+#featured .featured-image-right{
+    margin: auto;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    background: #999;
+    margin-bottom: 20px;
+}
+
+#featured .featured-image-right img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+#listing-by{
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    margin-bottom: 100px;
+}
+
+#listing-by .listing-container{
+    margin-bottom: 150px;
+}
+
+#listing-by .image-list{
+    margin: auto;
+    height: 35vh;
+    width: auto;
+    position: relative;
+}
+
+#listing-by .image-list img{
+    background-color: #f6f6f4;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+#listing-by .shape{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+}
+
+#listing-by .shape h1{
+    font-size: 20px;
+    font-family: 'mons-med', sans-serif;
+    color: green;
+}
+
+/* #by-category .image-list:after {
+    content:'';
+    position:absolute;
+    width:100%; 
+    height:15%;
+    bottom:0; 
+    left:0;
+    background:transparent;
+    opacity:1;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+#by-category .image-list h1{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    margin: auto 0;
+    color: green;
+    font-size: 20px;
+    font-family: 'mons-med', sans-serif;
+    text-align: center;
+    z-index: 2;
+} */
+
 #listing-product{
     width: 100%;
     height: auto;
     margin: auto;
-    padding: 10px 70px;
+    padding: 10px 100px;
 }
 
 #listing-product a{
@@ -219,6 +401,33 @@
     font-family: 'lato-bold', sans-serif;
     color: #6b6b6b;
     margin-bottom: 18px;
+}
+
+#listing-product  .listing-list .category-text{
+    font-family: 'mons-light', sans-serif;
+}
+
+#listing-product  .listing-list  .vl {
+    border-left: 3px solid green;
+    height: auto;
+    padding-left: 10px;
+    margin: 20px 0;
+    transition: .3s ease;
+}
+
+#listing-product  .listing-list  .vl:hover {
+    border-left: 25px solid green;
+    color: green;
+}
+
+#listing-product  .listing-list  a{
+    text-decoration: none;
+    color: #212529;
+}
+
+#listing-product h2{
+    font-family: 'mons-bold', sans-serif;
+    font-size: 28px;
 }
 
 #listing-product .size-choice{

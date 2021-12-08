@@ -68,29 +68,29 @@
         </div>
     </nav>
 
-    <section id="hero" class="animatable fadeInDown">
-        <div class="col-md-12">
+    <section id="hero">
+        <div class="col-md-12" data-aos="fade-up">
             <div id="banner-image">
                 <img src="img/about/1.jpg" alt="" class="elementor-post">
             </div>
             <div class="text-banner">
-                <h1 class="m-0">About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Distinctio.</p>
+                <h1 class="m-0" data-aos="fade-right">About Us</h1>
+                <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit Distinctio.</p>
             </div>
         </div>
     </section>
 
-    <section id="description" class="animatable fadeInDown">
+    <section id="description">
         <div class="col-md-12">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-1"></div>
-                <div class="col-md-3 my-auto">
+                <div class="col-md-3 my-auto" data-aos="fade-right">
                     <div class="logo-img">
                         <img src="img/logo.jpg"  alt="">
                     </div>
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-5 my-auto">
+                <div class="col-md-5 my-auto" data-aos="fade-left">
                     <h1 class="judul-content">Our Company</h1>
                     <p class="desc-content">
                         PT. Konderatu Design Center is an interior design company established in 1989, renowned for offering various design,
@@ -112,7 +112,7 @@
     </section>
 
     <section id="timeline">
-        <div class="timeline-info">
+        <div class="timeline-info" data-aos="fade-up">
             <h2>History</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quod possimus, repellendus corporis voluptates quos molestiae cumque nisi. Ullam hic vel, corrupti laboriosam provident officiis totam laudantium expedita voluptates voluptate.</p>
         </div>
@@ -216,7 +216,7 @@
         </div>
     </section>
 
-    <section id="contact" class="animatable fadeInDown">
+    <section id="contact" data-aos="fade-up">
         <div class="col-md-12 text-center">
             <img src="img/logo.jpg" class="contact-logo mb-4" alt="">
         </div>
@@ -243,18 +243,19 @@
             <div class="col-4 col-md-4 my-auto">
                 <span>© 2021 Brand Name. All Rights Reserved</span>
             </div>
+            
+            <div class="col-4 col-md-4 my-auto">
+                <!-- <ul class="footer-link">
+                    <li class="link-items">About</li>
+                    <li class="link-items">FAQs</li>
+                    <li class="link-items">Contact</li>
+                </ul> -->
+            </div>
             <div class="col-4 col-md-4 my-auto">
                 <span><i class="fab fa-facebook icon-social"></i></span>
                 <span><i class="fab fa-twitter icon-social"></i></span>
                 <span><i class="fab fa-instagram icon-social"></i></span>
                 <span><i class="fab fa-whatsapp icon-social"></i></span>
-            </div>
-            <div class="col-4 col-md-4 my-auto">
-                <ul class="footer-link">
-                    <li class="link-items">About</li>
-                    <li class="link-items">FAQs</li>
-                    <li class="link-items">Contact</li>
-                </ul>
             </div>
         </div>
         
@@ -279,7 +280,11 @@
 </script>
 
 <script>
-    AOS.init();
+    AOS.init({  
+        once: true,
+        duration: 600, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+    });
 </script>
 
 <script>

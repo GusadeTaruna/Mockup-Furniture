@@ -155,7 +155,7 @@
 
 .text-banner{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
     color: #333333;
@@ -166,7 +166,7 @@
 
 .text-banner h1{
     font-size: 70px;
-    font-family: 'mons-bold', sans-serif;
+    /* font-family: 'mons-med', sans-serif; */
     color: #fff;
 }
 
@@ -203,13 +203,13 @@
 
 .judul-content{
     margin-top: 30px;
-    font-size: 45px;
+    font-size: 36px;
     color:#1b691b;
 }
 
 .desc-content{
     font-family: "mons-light", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #timeline{
@@ -350,9 +350,9 @@ footer{
     font-family: "mons-bold", sans-serif;
     font-size: 15px;
     color: #2ba62b;
-    padding: 0 30px;
     width: 100%;
     height: auto;
+    overflow: hidden;
     border-radius: 0;
 }
 
