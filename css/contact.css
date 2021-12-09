@@ -237,9 +237,9 @@ footer{
     font-family: "mons-bold", sans-serif;
     font-size: 15px;
     color: #2ba62b;
-    padding: 0 30px;
     width: 100%;
     height: auto;
+    overflow: hidden;
     border-radius: 0;
 }
 
