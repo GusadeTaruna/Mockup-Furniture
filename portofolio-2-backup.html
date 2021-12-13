@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/furni-detail.css">
+    <link rel="stylesheet" href="css/portofolio-2.css">
     <link rel="stylesheet" href="css/animation.css">
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Furniture Listing</title>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portofolio</title>
 </head>
 <body>
 
@@ -47,75 +49,97 @@
         </div>
     </nav>
 
-    <section id="furni-detail" class="animatable fadeInDown">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-12 col-lg-12 col-xl-5 mb-4 my-md-auto">
-                <div class="image-furni">
-                    <img src="img/furni/3.jpg" alt="">
-                </div>
+    <!-- <div class="row">
+        <div class="col-md-12 d-flex justify-content-center mb-5">
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all"> All </button>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
+        </div>
+    </div> -->
+    <section id="hero">
+        <div class="col-md-12" data-aos="fade-down">
+            <div id="banner-image">
+                <img src="img/porto/header.jpg" alt="" class="elementor-post">
             </div>
+            <div class="text-banner">
+                <p class="m-0">Portofolio</p>
+                <h1 class="m-0">Our works that We<br> did for clients</h1>
+            </div>
+        </div>
+    </section>
     
-            <div class="col-md-12 col-lg-12 col-xl-4">
-                <h1 class="title-info">Furni Name</h1>
-                <p class="category-info mb-0">Furni Category</p>
-                <br>
-                <p class="desc-info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat eveniet tempore, animi eaque odit amet esse enim magni recusandae maxime impedit nostrum placeat porro tempora autem illum illo saepe.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse quidem placeat numquam pariatur velit impedit laborum, alias odit blanditiis minus ullam quo doloremque cumque incidunt consequuntur ea enim cupiditate?
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellat eveniet tempore, animi eaque odit amet esse enim magni recusandae maxime impedit nostrum placeat porro tempora autem illum illo saepe.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse quidem placeat numquam pariatur velit impedit laborum, alias odit blanditiis minus ullam quo doloremque cumque incidunt consequuntur ea enim cupiditate?
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="more-info" class="mt-5 animatable fadeInDown">
-        <ul class="option">
-            <li class="title-info">Additional Information</li>
-        </ul>
-
-        <div class="col-md-12 col-lg-12 col-xl-7 m-auto">
-            <p class="desc-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, minus voluptate in neque sit minima, enim repudiandae voluptatibus quod et ad dolore placeat, nisi incidunt hic! Est cum sit reiciendis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, neque cum enim eligendi voluptatibus deserunt at. Aperiam suscipit earum iusto corrupti vel, dignissimos eligendi accusamus a inventore sint tenetur iste.
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur laudantium maxime sint. Eligendi corporis cupiditate deserunt voluptate tenetur ex reprehenderit, magnam quisquam expedita sed numquam incidunt cumque culpa? Temporibus, laborum!
+    <section id="porto-image" class="">
+        <div class="col-md-12" data-aos="fade-down">
+            <!-- <div class="porto-header">
+                <p class="mb-0">Portofolio</p>
+                <h1>Our works that we did for clients</h1>
+            </div> -->
+            <div class="gallery" id="gallery">
+                <div class="mb-3 pics animation all 2">
+                    <p>Bali Padma<br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/balipadma.JPG" alt="Card image cap">
+                </div>
             
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, minus voluptate in neque sit minima, enim repudiandae voluptatibus quod et ad dolore placeat, nisi incidunt hic! Est cum sit reiciendis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, neque cum enim eligendi voluptatibus deserunt at. Aperiam suscipit earum iusto corrupti vel, dignissimos eligendi accusamus a inventore sint tenetur iste.
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur laudantium maxime sint. Eligendi corporis cupiditate deserunt voluptate tenetur ex reprehenderit, magnam quisquam expedita sed numquam incidunt cumque culpa? Temporibus, laborum!
-            </p>
+                <div class="mb-3 pics animation all 1">
+                    <p>Bella Singaraja "InterContinental" <br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/bellasingaraja.JPG" alt="Card image cap">
+                </div>
+            
+                <div class="mb-3 pics animation all 1">
+                    <p>Hard Rock Cafe & Resort<br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/hardrock.JPG" alt="Card image cap">
+                </div>
+            
+                <div class="mb-3 pics animation all 2">
+                    <p>Hyatt Aryaduta <br> Jakarta</p>
+                    <img class="img-fluid" src="img/porto/konderatu/hyattaryaduta.JPG" alt="Card image cap">
+                </div>
+                
+                <div class="mb-3 pics animation all 2">
+                    <p>Konderatu Resort <br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/konderatu.JPG" alt="Card image cap">
+                </div>
+            
+                <div class="mb-3 pics animation all 1">
+                    <p>Konderatu Mansion <br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/konderatumansion.JPG" alt="Card image cap">
+                </div>
+
+                <div class="mb-3 pics animation all 2">
+                    <p>Marriott Courtyard <br> Kauai Island</p>
+                    <img class="img-fluid" src="img/porto/konderatu/marriotcourt.JPG" alt="Card image cap">
+                </div>
+            
+                <div class="mb-3 pics animation all 1">
+                    <p>Regent Hotel <br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/regenthotel.JPG" alt="Card image cap">
+                </div>
+            
+                <div class="mb-3 pics animation all 1">
+                    <p>St. Regis <br>Bali </p>
+                    <img class="img-fluid" src="img/porto/konderatu/st-regis.JPG" alt="Card image cap">
+                </div>
+            
+                <div class="mb-3 pics animation all 2">
+                    <p>Istana Tapak Siring <br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/tapaksiring.JPG" alt="Card image cap">
+                </div>
+                
+                <div class="mb-3 pics animation all 2">
+                    <p>Four Seasons <br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/fourseason.JPG" alt="Card image cap">
+                </div>
+            
+                <div class="mb-3 pics animation all 1">
+                    <p>Westin Hotel <br> Bali</p>
+                    <img class="img-fluid" src="img/porto/konderatu/westin.JPG" alt="Card image cap">
+                </div>
+                
+            </div>
         </div>
     </section>
 
-    <section id="related-product" class="mt-5 mb-5 animatable fadeInDown">
-        <h4 class="text-center title-info">Related product</h4>
-        <div class="row mt-4 mb-3">
-            <div class="col-md-6 col-lg-3 mb-3">
-                <div class="top-image">
-                    <img src="img/listing/1.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-3">
-                <div class="top-image">
-                    <img src="img/listing/4.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-3">
-                <div class="top-image">
-                    <img src="img/listing/5.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-3">
-                <div class="top-image">
-                    <img src="img/listing/7.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="animatable fadeInDown">
+    <section id="contact" data-aos="fade-down">
         <div class="col-md-12 text-center">
             <img src="img/logo.jpg" class="contact-logo mb-4" alt="">
         </div>
@@ -142,29 +166,40 @@
             <div class="col-4 col-md-4 my-auto">
                 <span>© 2021 Brand Name. All Rights Reserved</span>
             </div>
+            
+            <div class="col-4 col-md-4 my-auto">
+                <!-- <ul class="footer-link">
+                    <li class="link-items">About</li>
+                    <li class="link-items">FAQs</li>
+                    <li class="link-items">Contact</li>
+                </ul> -->
+            </div>
             <div class="col-4 col-md-4 my-auto">
                 <span><i class="fab fa-facebook icon-social"></i></span>
                 <span><i class="fab fa-twitter icon-social"></i></span>
                 <span><i class="fab fa-instagram icon-social"></i></span>
                 <span><i class="fab fa-whatsapp icon-social"></i></span>
             </div>
-            <div class="col-4 col-md-4 my-auto">
-                <ul class="footer-link">
-                    <li class="link-items">About</li>
-                    <li class="link-items">FAQs</li>
-                    <li class="link-items">Contact</li>
-                </ul>
-            </div>
         </div>
         
     </footer>
 
-</body>
+    </body>
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({  
+        once: true,
+        duration: 600, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+    });
+</script>
+
 <script>
     window.addEventListener('scroll',(e)=>{
       const nav = document.querySelector('.navbar');
@@ -205,6 +240,12 @@
             $(window).on('scroll', doAnimations);
         $(window).trigger('scroll');
 
+    });
+</script>
+
+<script>
+     $(function(){  // $(document).ready shorthand
+        $('#porto-image').hide().fadeIn('slow');
     });
 </script>
 
