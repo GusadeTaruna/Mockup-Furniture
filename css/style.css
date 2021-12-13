@@ -211,10 +211,11 @@
     font-size: 20px;
 }
 
-.footer{
+footer{
     font-family: "mons-bold", sans-serif;
     font-size: 15px;
-    color: #2ba62b;
+    background-color: #198754;
+    color: #fff;
     width: 100%;
     height: auto;
     overflow: hidden;
