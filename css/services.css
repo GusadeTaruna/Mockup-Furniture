@@ -240,7 +240,7 @@ footer{
 
 #contact{
     width: 100%;
-    height: 25vh;
+    height: auto;
     margin: auto;
     color: #000;
     border-radius: 0;
@@ -282,4 +282,160 @@ footer{
 .footer .footer-link .link-items{
     display: inline-block;
     margin: 0 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-banner{
+        left: 45%;
+    }
+
+    .judul-content{
+        font-size: 40px;
+    }
+    .desc-content{
+        font-size: 14px;
+    }
+
+    #team-section .team-image h1{
+        font-size: 22px;
+    }
+
+    #team-section .team-image p{
+        font-size: 16px;
+    }
+
+    #team-section .judul-team{
+        font-size: 40px;
+    }
+
+    #team-section .team-image{
+        width: 75%;
+        height: 40vh;
+    }
+
+    #contact .sub-judul{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .text-banner{
+        left: 40%;
+    }
+
+    .text-banner h1{
+        font-size: 45px;
+    }
+
+    .text-banner p{
+        font-size: 15px;
+    }
+
+    .judul-content{
+        font-size: 40px;
+    }
+
+    .desc-content{
+        font-size: 14px;
+    }
+
+    #team-section .team-image{
+        width: 75%;
+        height: 40vh;
+    }
+
+    #team-section .judul-team{
+        font-size: 40px;
+    }
+
+    #team-section .team-image h1{
+        font-size: 20px;
+    }
+
+    #team-section .team-image p{
+        font-size: 15px;
+    }
+
+    #contact .judul{
+        font-size: 14px;
+    }
+
+    #contact .sub-judul{
+        font-size: 13px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+
+    #about-content .content-image{
+        display: none;
+    }
+
+    #timeline{
+        padding: 0;
+        width: 100%;
+    }
+
+    .timeline-info p{
+        width: 80%;
+    }
+
+    .timeline-bar:after{
+        display: none;
+    }
+
+    .col-md-6:nth-child(even) .timeline-card{
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    html,body
+    {
+        overflow-x: hidden; 
+    }
+
+    #banner-image{
+        width: 100%;
+    }
+
+    .text-banner{
+        top: 60%;
+        left: 50%;
+    }
+
+    .text-banner h1{
+        font-size: 50px;
+    }
+
+    .text-banner p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #services-list{
+        padding: 0;
+    }
+
+    .header-service{
+        justify-content: center !important;
+    }
+
+    #services-list .vl{
+        display: none;
+    }
+
+    #services-list .judul-desc{
+        margin-bottom: 15px !important;
+        font-size: 30px;
+    }
+
+    #services-list .sub-desc{
+        width: 90%;
+        margin: auto;
+    }
+   
 }

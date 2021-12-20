@@ -334,7 +334,7 @@
     font-family: 'mons-light', sans-serif;
 }
 
-.col-sm-6:nth-child(even) .timeline-card{
+.col-md-6:nth-child(even) .timeline-card{
     margin-top: 130px;
 }
 
@@ -359,7 +359,7 @@ footer{
 
 #contact{
     width: 100%;
-    height: 25vh;
+    height: auto;
     margin: auto;
     color: #000;
     border-radius: 0;
@@ -490,6 +490,23 @@ footer{
 
     #about-content .content-image{
         display: none;
+    }
+
+    #timeline{
+        padding: 0;
+        width: 100%;
+    }
+
+    .timeline-info p{
+        width: 80%;
+    }
+
+    .timeline-bar:after{
+        display: none;
+    }
+
+    .col-md-6:nth-child(even) .timeline-card{
+        margin-top: 0;
     }
 
 }
