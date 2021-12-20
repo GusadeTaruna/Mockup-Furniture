@@ -190,7 +190,7 @@
 
 #services-list .vl {
     border-left: 4px solid green;
-    height: auto;
+    height: 100%;
 }
 
 #services-list a{
@@ -390,21 +390,10 @@ footer{
         margin-top: 0;
     }
 
-}
-
-@media only screen and (max-width: 580px) {
-    html,body
-    {
-        overflow-x: hidden; 
-    }
-
-    #banner-image{
-        width: 100%;
-    }
-
     .text-banner{
         top: 60%;
         left: 50%;
+        text-align: center;
     }
 
     .text-banner h1{
@@ -413,7 +402,6 @@ footer{
 
     .text-banner p{
         font-size: 15px;
-        text-align: center;
     }
 
     #services-list{
@@ -436,6 +424,22 @@ footer{
     #services-list .sub-desc{
         width: 90%;
         margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 787px) {
+    
+}
+
+@media only screen and (max-width: 580px) {
+    html,body
+    {
+        overflow-x: hidden; 
+    }
+
+    #banner-image{
+        width: 100%;
     }
    
 }
